@@ -1,0 +1,94 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.wp-block-author-box-author-plugin {
+  background-color: #21759b;
+  color: #fff;
+  padding: 0.6em;
+}
+.wp-block-author-box-author-plugin ul {
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 0.5em;
+}
+.wp-block-author-box-author-plugin ul.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.wp-block-author-box-author-plugin ul.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.wp-block-author-box-author-plugin ul.columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.wp-block-author-box-author-plugin ul li {
+  list-style: none;
+  display: flex;
+}
+.wp-block-author-box-author-plugin ul li img {
+  height: auto;
+  max-width: 100%;
+}
+
+.wp-block-author-box-author-plugin__author {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wp-block-author-box-author-plugin__avatar {
+  margin-right: 1em;
+}
+
+.wp-block-author-box-author-plugin__author-content {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.wp-block-author-box-author-plugin__post-title a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+.wp-block-author-box-author-plugin__post-items {
+  display: flex;
+  list-style: none;
+}
+.wp-block-author-box-author-plugin__post-items li h4 {
+  margin: 25px 15px;
+}
+.wp-block-author-box-author-plugin__post-items li h4 a {
+  font-size: 25px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.wp-block-author-box-author-plugin__post-items li h4 a span {
+  color: #00c6ad;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.wp-block-author-box-author-plugin__post-excerpt p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin: 0 15px;
+}/*# sourceMappingURL=style.css.map */

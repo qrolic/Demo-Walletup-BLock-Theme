@@ -1,0 +1,109 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import "../../../../assets/css/variable/_variable.scss";
+
+.service-section {
+    background-color: #2746e6;
+    position: relative;
+
+    &__inner {
+        padding: 85px 0 100px 0;
+        @include max-991 {
+            padding: 50px 0 100px 0;
+        }
+        @include max-575 {
+            padding: 50px 0 50px 0;
+        }
+
+        &_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+            width: auto;
+            height: 100%;
+            @include max-1199 {
+                width: 430px;
+            }
+            @include max-991 {
+                width: 340px;
+            }
+            @include max-767 {
+                width: 275px;
+            }
+            @include max-575 {
+                display: none;
+            }
+        }
+        }
+
+        &_heading {
+            
+            h2 {
+                font-size: 76.45px;
+                line-height: 80px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                margin: 0;
+                letter-spacing: -4px;
+                @include max-1199 {
+                    font-size: 65px;
+                    line-height: 70px;
+                }
+                @include max-991 {
+                    font-size: 50px;
+                    line-height: 56px;
+                }
+                @include max-767 {
+                    font-size: 38px;
+                    line-height: 44px;
+                    text-align: center;
+                    letter-spacing: -1px;
+                }
+                br {
+                    @include max-991 {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &_button {
+            margin-top: 40px;
+            @include max-991 {
+                margin-top: 25px;
+            }
+            @include max-767 {
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: #000000;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                background-color: #ffffff;
+                padding: 10px 40px;
+                border-radius: 30px;
+                letter-spacing: -1px;
+                @include max-1199 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                @include max-991 {
+                    font-size: 15px;
+                    line-height: 20px;
+                    padding: 10px 30px;
+                }
+                @include max-575 {
+                    padding: 5px 25px;
+                }
+            }
+        }
+    }
+}

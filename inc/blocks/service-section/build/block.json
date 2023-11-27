@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/service-section",
+  "version": "0.1.0",
+  "title": "Service Section",
+  "category": "walletup",
+  "icon": "  dashicons-admin-generic",
+  "description": "this is am image and description in Service Section",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "service-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2"
+    },
+    "mediaID": {
+      "type": "number"
+    },
+    "mediaURL": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "src"
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": "a"
+    },
+    "buttonURL": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

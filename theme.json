@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "settings": {
+        "layout": {
+			"contentSize": "100%",
+			"wideSize": "1140px"
+		},
+        "color": {
+            "palette": [
+                {
+                    "name": "grey",
+                    "slug": "grey",
+                    "color": "#00c6ad"
+                },
+                {
+                    "name": "blue",
+                    "slug": "blue",
+                    "color": "#2746e6"
+                }
+            ]
+        }
+    }
+}

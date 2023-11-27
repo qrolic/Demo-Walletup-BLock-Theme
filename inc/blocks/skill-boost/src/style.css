@@ -1,0 +1,123 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.skill-boost {
+  margin: 150px 0 50px 0;
+}
+@media screen and (max-width: 767px) {
+  .skill-boost {
+    margin: 75px 0 25px 0;
+  }
+}
+.skill-boost__inner_img {
+  text-align: center;
+}
+.skill-boost__inner_img img {
+  width: auto;
+  height: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .skill-boost__inner_img img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .skill-boost__inner_img img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skill-boost__inner_img img {
+    display: none;
+  }
+}
+.skill-boost__inner_heading {
+  margin-top: 150px;
+}
+@media screen and (max-width: 1199px) {
+  .skill-boost__inner_heading {
+    margin-top: 125px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .skill-boost__inner_heading {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skill-boost__inner_heading {
+    margin-top: 50px;
+  }
+}
+.skill-boost__inner_heading h2 {
+  font-size: 81px;
+  line-height: 70px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 0 0 50px 0;
+}
+@media screen and (max-width: 1199px) {
+  .skill-boost__inner_heading h2 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .skill-boost__inner_heading h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .skill-boost__inner_heading h2 {
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .skill-boost__inner_heading h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+.skill-boost__inner_description p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin: 35px 0 100px 0;
+}
+@media screen and (max-width: 991px) {
+  .skill-boost__inner_description p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 25px 0 50px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .skill-boost__inner_description p {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

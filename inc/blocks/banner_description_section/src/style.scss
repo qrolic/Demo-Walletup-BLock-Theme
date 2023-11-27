@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import "../../../../assets/css/variable/variable";
+.wp-block-create-block-banner_discription_section {
+	color: black;
+	padding: 2px;
+}
+.col-lg-4 {
+padding: 0 !important;
+text-align: center;
+}
+.col-lg-8 {
+	padding:0 10px 0 5px !important;
+}
+.banner-description {
+ &__inner {
+ &_heading {
+	h4 {
+		font-size: 16px;
+		line-height: 16px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		letter-spacing: -1px;
+		margin: 0;
+	}
+}
+&_description {
+	p {
+		font-size: 13px;
+		line-height: 17px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		margin: 8px 0 0 0; 
+	}
+}
+}}
+.banner {
+	@include max-767 {
+		display: block !important;
+	}
+}

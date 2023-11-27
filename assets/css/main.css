@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.navigation-menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 85px;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+}
+.navigation-menu li a:hover {
+  border-bottom: 8px solid #1747e7;
+}
+
+.is-layout-flex {
+  margin: 0 0 0px 0 !important;
+}
+
+.has-custom-content-position {
+  padding-bottom: 0 !important;
+}
+
+.size-full {
+  margin: 0 !important;
+}
+
+.is-layout-constrained {
+  padding: 0 !important;
+}
+
+.wp-block-image {
+  position: relative;
+  right: -68px;
+}
+
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.secret {
+  margin-top: 100px;
+}
+.secret__inner {
+  position: relative;
+}
+.secret__inner .row {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row {
+    flex-wrap: wrap;
+  }
+}
+.secret__inner .row h2 {
+  font-size: 81.61px;
+  line-height: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 62px !important;
+}
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 {
+    font-size: 70px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 {
+    font-size: 60px;
+    line-height: 66px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .secret__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.secret__inner .row .secret-img {
+  right: -100px;
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row .secret-img {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.contact-form {
+  margin: 100px 0;
+  text-align: center;
+}
+.contact-form_First_heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-form_First_heading__First-name {
+  width: 47%;
+}
+.contact-form_First_heading__First-name p input {
+  width: 87%;
+  padding: 20px 0 20px 50px;
+  border: 2px solid #b1b1b1;
+  border-radius: 7px;
+}
+.contact-form_First_heading_Last-name {
+  width: 47%;
+}
+.contact-form_First_heading_Last-name p input {
+  width: 87%;
+  padding: 20px 0 20px 50px;
+  border: 2px solid #b1b1b1;
+  border-radius: 7px;
+}
+.contact-form__Email-Subject p input {
+  width: 88%;
+  padding: 20px 0 20px 50px;
+  border: 2px solid #b1b1b1;
+  border-radius: 7px;
+}
+.contact-form__Your-message p span textarea {
+  width: 92%;
+  border: 2px solid #b1b1b1;
+  border-radius: 7px;
+}
+.contact-form__Submit-Email p button {
+  padding: 15px 150px;
+  color: #fff;
+  background-color: #2746e6;
+  border-radius: 7px;
+  border: none;
+  margin-top: 80px;
+}
+.contact-form__inner .row h2 {
+  font-size: 50px;
+  line-height: 55px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 55px !important;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.step-service {
+  margin-top: 100px;
+  padding: 130px 0 !important;
+  position: relative;
+}
+.step-service__inner {
+  position: relative;
+}
+.step-service__inner .row {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .row {
+    flex-wrap: wrap;
+  }
+}
+.step-service__inner .row h2 {
+  font-size: 76px;
+  line-height: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 0 !important;
+  padding: 20px 0 !important;
+  border-bottom: 7px solid #fff;
+}
+@media screen and (max-width: 1199px) {
+  .step-service__inner .row h2 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step-service__inner .row h2 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.step-service__inner .row p {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding: 35px 0 !important;
+}
+.step-service__inner .step-pending {
+  padding: 0 50px !important;
+}
+.step-service::before {
+  content: url("./../../img/step-section-top.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/home-hero-section",
+  "version": "0.1.0",
+  "title": "Home Hero Section",
+  "category": "walletup",
+  "icon": "  dashicons-clipboard",
+  "description": "This block shows the banner section on the homepage",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "home-hero-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h1"
+    }
+  }
+}

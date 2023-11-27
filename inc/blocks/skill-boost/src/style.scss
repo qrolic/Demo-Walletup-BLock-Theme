@@ -1,0 +1,90 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ @import "../../../../assets/css/variable/_variable.scss";
+
+.skill-boost {
+	margin:150px 0 50px 0 ;
+	@include max-767 {
+		margin:75px 0 25px 0 ;
+	}
+	&__inner {
+		&_img {
+			text-align: center;
+			img {
+				width: auto;
+				height: 100%;
+				@include max-1199 {
+					width: 300px;
+				}
+				@include max-991 {
+					width: 250px;
+				}
+				@include max-767 {
+					display: none;
+				}
+			}
+		}
+		&_heading {
+			margin-top: 150px;
+			@include max-1199 {
+				margin-top: 125px;
+			}
+			@include max-991 {
+				margin-top: 75px;
+			}
+			@include max-767 {
+				margin-top: 50px;
+			}
+			h2 {
+				font-size: 81px;
+				line-height: 70px;
+				color: #000000;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 800;
+				margin: 0 0 50px 0;
+				@include max-1199 {
+					font-size: 55px;
+					line-height: 60px;
+				}
+				@include max-991 {
+					font-size: 40px;
+					line-height: 45px;
+				}
+				@include max-575 {
+					font-size: 35px;
+					line-height: 40px;
+					text-align: center;
+				}
+				@include max-425 {
+					font-size: 32px;
+					line-height: 37px;
+				}
+			}
+		}
+		&_description {
+			p {
+				font-size: 16px;
+				line-height: 18px;
+				color: #000000;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 500;
+				margin: 35px 0 100px 0;
+				@include max-991 {
+					font-size: 14px;
+					line-height: 16px;
+					margin: 25px 0 50px 0;
+				}
+				@include max-575 {
+					font-size: 12px;
+					line-height: 14px;
+					text-align: center;
+					padding: 0 20px;
+				}
+			}
+		}
+	}
+}

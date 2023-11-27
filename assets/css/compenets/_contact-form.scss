@@ -1,0 +1,81 @@
+@import "../variable/variable";
+
+.contact-form{
+    margin: 100px 0;
+    text-align: center;
+&_First_heading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &__First-name {
+        width: 47%;
+        p {
+            input {
+                width: 87%;
+                padding: 20px 0 20px 50px;
+                border:2px solid #b1b1b1;
+                border-radius: 7px;
+            }
+        }
+    }
+    &_Last-name {
+        width: 47%;
+        p {
+            input {
+                width: 87%;
+                padding: 20px 0 20px 50px;
+                border:2px solid #b1b1b1;
+                border-radius: 7px;
+            }
+        }
+    }
+}
+&__Email-Subject {
+    p {
+        input {
+            width: 88%;
+            padding: 20px 0 20px 50px;
+            border:2px solid #b1b1b1;
+            border-radius: 7px;
+        }
+    }
+}
+&__Your-message {
+    p {
+        span {
+            textarea {
+            width: 92%;
+            border:2px solid #b1b1b1;
+            border-radius: 7px;
+            }
+        }
+    }
+}
+&__Submit-Email {
+    p{
+        button {
+            padding: 15px 150px;
+            color: #fff;
+            background-color: #2746e6;
+            border-radius: 7px;
+            border: none;
+            margin-top: 80px;
+        }
+    }
+}
+
+    &__inner{
+    
+        .row{
+   
+            h2 {
+                font-size: 50px;
+                line-height: 55px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                margin-bottom: 55px !important;
+                text-align: center;
+               }
+        }
+    }
+}

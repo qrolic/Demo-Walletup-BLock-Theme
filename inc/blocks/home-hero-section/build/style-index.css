@@ -1,0 +1,85 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.home-hero {
+  padding: 100px 0px;
+}
+@media screen and (max-width: 1199px) {
+  .home-hero {
+    padding: 85px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home-hero {
+    padding: 65px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home-hero {
+    padding: 50px 0;
+  }
+}
+.home-hero .home-hero__inner_heading h1 {
+  font-size: 76.45px;
+  line-height: 70px;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 1199px) {
+  .home-hero .home-hero__inner_heading h1 {
+    font-size: 70px;
+    line-height: 65px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .home-hero .home-hero__inner_heading h1 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home-hero .home-hero__inner_heading h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .home-hero .home-hero__inner_heading h1 {
+    font-size: 40px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home-hero .home-hero__inner_heading h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

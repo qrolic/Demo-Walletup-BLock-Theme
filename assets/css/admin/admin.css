@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.secret__inner .row {
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+.secret__inner .row h2 {
+  font-size: 81.61px;
+  line-height: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 62px !important;
+}/*# sourceMappingURL=admin.css.map */
