@@ -95,7 +95,7 @@ export default function Edit({ attributes, setAttributes }) {
 								</div>
 								<div className="col-lg-7 col-md-7 col-sm-7">
 									<div className="service-section__inner_heading">
-										<RichText
+										<TextControl
 											tagName="h2"
 											value={Heading}
 											onChange={onChangeHeading}

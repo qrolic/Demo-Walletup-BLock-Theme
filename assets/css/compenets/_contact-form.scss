@@ -3,6 +3,12 @@
 .contact-form{
     margin: 100px 0;
     text-align: center;
+    @include max-1199 {
+        margin: 75px 0;
+    }
+    @include max-991 {
+        margin: 50px 0;
+    }
 &_First_heading {
     display: flex;
     justify-content: center;
@@ -15,6 +21,13 @@
                 padding: 20px 0 20px 50px;
                 border:2px solid #b1b1b1;
                 border-radius: 7px;
+                @include max-991 {
+                    width: 80%;
+                }
+                @include max-767 {
+                    width: 87%;
+                    padding: 10px 0 10px 20px;
+                }
             }
         }
     }
@@ -26,6 +39,13 @@
                 padding: 20px 0 20px 50px;
                 border:2px solid #b1b1b1;
                 border-radius: 7px;
+                @include max-991 {
+                    width: 80%;
+                }
+                @include max-767 {
+                    width: 87%;
+                    padding: 10px 0 10px 20px;
+                }
             }
         }
     }
@@ -37,6 +57,13 @@
             padding: 20px 0 20px 50px;
             border:2px solid #b1b1b1;
             border-radius: 7px;
+            @include max-991 {
+                width: 85%;
+            }
+            @include max-767 {
+                width: 88%;
+                padding: 10px 0 10px 20px;
+            }
         }
     }
 }
@@ -60,6 +87,15 @@
             border-radius: 7px;
             border: none;
             margin-top: 80px;
+            @include max-1199 {
+                margin-top: 50px;
+            }
+            @include max-991 {
+                margin-top: 35px;
+            }
+            @include max-767 {
+                margin-top: 25px;
+            }
         }
     }
 }
@@ -75,6 +111,16 @@
                 font-weight: 800;
                 margin-bottom: 55px !important;
                 text-align: center;
+                @include max-991 {
+                    font-size: 45px;
+                    line-height: 50px;
+                    margin-bottom: 40px !important;
+                }
+                @include max-767 {
+                    font-size: 35px;
+                    line-height: 40px;
+                    margin-bottom: 30px !important;
+                }
                }
         }
     }

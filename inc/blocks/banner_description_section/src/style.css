@@ -17,20 +17,14 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
-.wp-block-create-block-banner_discription_section {
-  color: black;
-  padding: 2px;
-}
-
-.col-lg-4 {
+.banner-description {
+  margin: 0 !important;
   padding: 0 !important;
-  text-align: center;
+  overflow: hidden;
 }
-
-.col-lg-8 {
-  padding: 0 10px 0 5px !important;
+.banner-description__inner {
+  box-sizing: border-box;
 }
-
 .banner-description__inner_heading h4 {
   font-size: 16px;
   line-height: 16px;
@@ -39,6 +33,12 @@
   letter-spacing: -1px;
   margin: 0;
 }
+.banner-description__inner_heading h4 span {
+  color: #00c6ad;
+}
+.banner-description__inner_heading h4 .change-color {
+  color: #1747e7;
+}
 .banner-description__inner_description p {
   font-size: 13px;
   line-height: 17px;
@@ -46,9 +46,6 @@
   font-weight: 600;
   margin: 8px 0 0 0;
 }
-
-@media screen and (max-width: 767px) {
-  .banner {
-    display: block !important;
-  }
+.banner-description__inner_img {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

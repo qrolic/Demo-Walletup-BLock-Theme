@@ -1,1 +1,25 @@
-/*# sourceMappingURL=header.css.map */
+.header-button {
+  margin-top: 75px !important;
+}
+.header-button a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 85px;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+}
+.navigation-menu li a:hover {
+  border-bottom: 8px solid #1747e7;
+}/*# sourceMappingURL=header.css.map */

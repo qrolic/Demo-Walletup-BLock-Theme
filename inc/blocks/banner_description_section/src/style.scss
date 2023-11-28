@@ -5,41 +5,43 @@
  * Replace them with your own styles or remove the file completely.
  */
 @import "../../../../assets/css/variable/variable";
-.wp-block-create-block-banner_discription_section {
-	color: black;
-	padding: 2px;
-}
-.col-lg-4 {
-padding: 0 !important;
-text-align: center;
-}
-.col-lg-8 {
-	padding:0 10px 0 5px !important;
-}
+
 .banner-description {
- &__inner {
- &_heading {
-	h4 {
-		font-size: 16px;
-		line-height: 16px;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 800;
-		letter-spacing: -1px;
-		margin: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden;
+	&__inner {
+		box-sizing: border-box;
+		
+		&_heading {
+			h4 {
+				font-size: 16px;
+				line-height: 16px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 800;
+				letter-spacing: -1px;
+				margin: 0;
+				span {
+					color: #00c6ad;
+				}
+				.change-color {
+					color: #1747e7;
+				}
+			}
+		}
+
+		&_description {
+			p {
+				font-size: 13px;
+				line-height: 17px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+				margin: 8px 0 0 0;
+			}
+		}
+		&_img {
+			text-align: center;
+		}
 	}
 }
-&_description {
-	p {
-		font-size: 13px;
-		line-height: 17px;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 600;
-		margin: 8px 0 0 0; 
-	}
-}
-}}
-.banner {
-	@include max-767 {
-		display: block !important;
-	}
-}
+

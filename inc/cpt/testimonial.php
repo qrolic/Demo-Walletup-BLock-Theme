@@ -42,6 +42,7 @@ function custom_post_type()
 		'menu_position' => 5,
 		'can_export' => true,
 		'has_archive' => true,
+		'rewrite' => array('slug' => 'testimonials'),
 		'exclude_from_search' => false,
 		'publicly_queryable' => true,
 		'capability_type' => 'post',

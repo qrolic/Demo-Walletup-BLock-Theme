@@ -8,8 +8,14 @@
 
 .skill-boost {
 	margin:150px 0 50px 0 ;
-	@include max-767 {
+	@include max-991 {
 		margin:75px 0 25px 0 ;
+	}
+	@include max-767 {
+		margin:40px 0 25px 0 ;
+	}
+	@include max-575 {
+		margin:30px 0 25px 0 ;
 	}
 	&__inner {
 		&_img {
@@ -37,7 +43,10 @@
 				margin-top: 75px;
 			}
 			@include max-767 {
-				margin-top: 50px;
+				margin-top: 40px;
+			}
+			@include max-767 {
+				margin-top: 25px;
 			}
 			h2 {
 				font-size: 81px;
@@ -46,6 +55,9 @@
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 800;
 				margin: 0 0 50px 0;
+				span {
+					color: #00c6ad;
+				}
 				@include max-1199 {
 					font-size: 55px;
 					line-height: 60px;
@@ -53,6 +65,12 @@
 				@include max-991 {
 					font-size: 40px;
 					line-height: 45px;
+				}
+				@include max-767 {
+					text-align: center;
+					br {
+						display: none;
+					}
 				}
 				@include max-575 {
 					font-size: 35px;

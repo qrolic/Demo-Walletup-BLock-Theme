@@ -49,6 +49,9 @@
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 800;
 				margin: 0;
+				span {
+					color: #00c6ad;
+				}
 				@include max-1199 {
 					font-size: 55px;
 					line-height: 60px;
@@ -56,6 +59,12 @@
 				@include max-991 {
 					font-size: 40px;
 					line-height: 45px;
+				}
+				@include max-767 {
+					text-align: center;
+					br {
+						display: none;
+					}
 				}
 				@include max-575 {
 					font-size: 35px;

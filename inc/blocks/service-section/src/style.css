@@ -71,6 +71,9 @@
   margin: 0;
   letter-spacing: -4px;
 }
+.service-section__inner_heading h2 span {
+  color: #ffffff;
+}
 @media screen and (max-width: 1199px) {
   .service-section__inner_heading h2 {
     font-size: 65px;

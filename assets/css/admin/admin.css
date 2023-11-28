@@ -11,9 +11,61 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
+.header-button {
+  margin-top: 75px !important;
+}
+.header-button a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 85px;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+}
+.navigation-menu li a:hover {
+  border-bottom: 8px solid #1747e7;
+}
+
+.secret {
+  margin-top: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .secret {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret {
+    margin-top: 0px;
+  }
+}
+.secret__inner {
+  position: relative;
+}
 .secret__inner .row {
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row {
+    flex-wrap: wrap;
+  }
 }
 .secret__inner .row h2 {
   font-size: 81.61px;
@@ -21,4 +73,78 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   margin-bottom: 62px !important;
+}
+.secret__inner .row .secret-img {
+  right: -100px;
+}
+
+.step-service {
+  margin-top: 100px;
+  position: relative;
+}
+.step-service__inner {
+  position: relative;
+}
+.step-service__inner .row {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .row {
+    flex-wrap: wrap;
+  }
+}
+.step-service__inner .row h2 {
+  font-size: 76px;
+  line-height: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 0 !important;
+  padding: 20px 0 !important;
+  border-bottom: 7px solid #fff;
+}
+@media screen and (max-width: 1199px) {
+  .step-service__inner .row h2 {
+    font-size: 65px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step-service__inner .row h2 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.step-service__inner .row p {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding: 35px 0 !important;
+}
+.step-service__inner .row .step-pending {
+  padding: 0 50px !important;
+}
+.step-service::before {
+  content: url("./../../img/step-section-top.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer {
+  padding: 165px 0 !important;
+  background-color: black;
 }/*# sourceMappingURL=admin.css.map */

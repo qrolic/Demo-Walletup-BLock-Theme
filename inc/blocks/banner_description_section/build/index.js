@@ -97,7 +97,7 @@ function Edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "row banner"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "col-lg-4 co-md-4 col-12"
+    className: "col-lg-4 col-md-4 col-4"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner_img"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
@@ -116,10 +116,10 @@ function Edit({
     isLink: true,
     isDestructive: true
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("remove image", "post-media-selector"))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "col-lg-8 co-md-8 col-12"
+    className: "col-lg-8 col-md-8 col-8"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner_heading"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     tagName: "h4",
     value: Heading,
     onChange: onChangeHeading,
@@ -234,17 +234,19 @@ function save(props) {
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "container p-0"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "row banner"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "col-lg-4 co-md-4 col-12"
+    className: "col-lg-4 col-md-4 col-4"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner_img"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: mediaURL
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "col-lg-8 co-md-8 col-12"
+    className: "col-lg-8 col-md-8 col-8"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner_heading"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
@@ -255,7 +257,7 @@ function save(props) {
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
     tagName: "p",
     value: description
-  })))))));
+  }))))))));
 }
 
 /***/ }),
@@ -340,7 +342,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/banner-discription-section","version":"0.1.0","title":"Banner Discription Section","category":"walletup","icon":"  dashicons-admin-tools","description":"this is an image, Heading, and description in banner-discription-section","example":{},"supports":{"html":false},"textdomain":"banner_discription_section","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","attributes":{"Heading":{"type":"string","source":"html","selector":"h4"},"description":{"type":"string","source":"html","selector":"p"},"mediaID":{"type":"number"},"mediaURL":{"type":"string","source":"attribute","selector":"img","attribute":"src"}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/banner-description-section","version":"0.1.0","title":"Banner Description Section","category":"walletup","icon":"  dashicons-admin-tools","description":"this is an image, Heading, and description in banner-description-section","example":{},"supports":{"html":false},"textdomain":"banner_description_section","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","attributes":{"Heading":{"type":"string","source":"html","selector":"h4"},"description":{"type":"string","source":"html","selector":"p"},"mediaID":{"type":"number"},"mediaURL":{"type":"string","source":"attribute","selector":"img","attribute":"src"}}}');
 
 /***/ })
 

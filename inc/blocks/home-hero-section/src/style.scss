@@ -7,7 +7,7 @@
 @import "../../../../assets/css/variable/_variable.scss";
 
 .home-hero {
-  padding: 100px 0px;
+  padding: 150px 0px;
   @include max-1199 {
     padding: 85px 0 ;
   }
@@ -47,6 +47,9 @@
       @include max-425 {
         font-size: 30px;
         line-height: 35px;
+      }
+      span {
+        color: #00c6ad;
       }
     }
   }

@@ -79,8 +79,7 @@ require_once 'pattern/event.php';
 require_once 'pattern/secret.php';
 require_once 'pattern/contact-forn.php';
 
-
-require_once 'inc/blocks/banner-section/banner-section.php';
+require_once 'inc/blocks/testimonials-dynamic/testimonials-dynamic.php';
 require_once 'inc/blocks/home-hero-section/home-hero-section.php';
 require_once 'inc/blocks/banner_description_section/banner_description_section.php';
 require_once 'inc/blocks/zigzag-section/zigzag-section.php';

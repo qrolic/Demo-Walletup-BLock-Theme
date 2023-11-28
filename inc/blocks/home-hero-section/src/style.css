@@ -18,7 +18,7 @@
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
 .home-hero {
-  padding: 100px 0px;
+  padding: 150px 0px;
 }
 @media screen and (max-width: 1199px) {
   .home-hero {
@@ -74,4 +74,7 @@
     font-size: 30px;
     line-height: 35px;
   }
+}
+.home-hero .home-hero__inner_heading h1 span {
+  color: #00c6ad;
 }/*# sourceMappingURL=style.css.map */

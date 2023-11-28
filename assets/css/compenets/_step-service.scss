@@ -1,10 +1,20 @@
-@import "../variable/variable";
 
 .step-service {
     margin-top: 100px;
     padding: 130px 0 !important;
     position: relative;
-
+@include max-1199 {
+    margin-top: 75px;
+    padding: 100px !important;
+}
+@include max-991 {
+    margin-top: 50px;
+    padding: 75px !important;
+}
+@include max-767 {
+    margin-top: 35px;
+    padding: 35px !important;
+}
     &__inner {
         position: relative;
 
@@ -55,6 +65,12 @@
 
         .step-pending {
             padding: 0 50px !important;
+            @include max-991 {
+                padding: 0 25px !important;
+            }
+            @include max-767 {
+                padding: 0 !important;
+            }
         }
     }
     &::before {

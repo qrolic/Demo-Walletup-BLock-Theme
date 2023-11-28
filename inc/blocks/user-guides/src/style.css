@@ -76,6 +76,9 @@
   font-weight: 800;
   margin: 0;
 }
+.user-guides__inner_heading h2 span {
+  color: #00c6ad;
+}
 @media screen and (max-width: 1199px) {
   .user-guides__inner_heading h2 {
     font-size: 55px;
@@ -86,6 +89,14 @@
   .user-guides__inner_heading h2 {
     font-size: 40px;
     line-height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .user-guides__inner_heading h2 {
+    text-align: center;
+  }
+  .user-guides__inner_heading h2 br {
+    display: none;
   }
 }
 @media screen and (max-width: 575px) {

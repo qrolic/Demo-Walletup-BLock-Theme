@@ -13,7 +13,6 @@ import { __ } from "@wordpress/i18n";
  */
 import {
   useBlockProps,
-  RichText,
   InspectorControls,
 } from "@wordpress/block-editor";
 import { PanelBody, TextControl } from "@wordpress/components";
@@ -59,9 +58,9 @@ export default function Edit(props) {
           <div className="container p-0">
             <div className="home-hero__inner">
               <div className="row">
-                <div className="col">
+                <div className="col-12  ">
                   <div className="home-hero__inner_heading">
-                    <RichText
+                    <TextControl
                       tagName="h1"
                       value={Heading}
                       onChange={onChangeHeading}

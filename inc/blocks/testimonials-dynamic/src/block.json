@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "testimonials-dynamic/testimonials-dynamic",
+	"version": "0.1.0",
+	"title": "Testimonials-dynamic",
+	"category": "walletup",
+	"icon": "smiley",
+	"description": "This is a slider in testimonials block",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "testimonials-dynamic",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"attributes": {
+		"numberOfItems": {
+			"type": "number",
+			"default": 3
+		},
+		"columns": {
+			"type": "number",
+			"default": 1
+		},
+		"displayDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayAuthorInfo": {
+			"type": "boolean",
+			"default": true
+		},
+		"showAvatar": {
+			"type": "boolean",
+			"default": true
+		}, 
+		"avatarSize": {
+			"type": "number",
+			"default": 48
+		},
+		"showBio": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}
