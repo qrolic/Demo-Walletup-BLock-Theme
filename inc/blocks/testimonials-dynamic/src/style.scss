@@ -5,3 +5,119 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+@import "../../../../assets/css/variable/_variable.scss";
+
+.testimonial {
+    position: relative;
+    &__inner {
+        margin: 320px 0;
+        @include max-991 {
+            margin: 200px;
+        }
+        @include max-767 {
+            margin: 50px;
+        }
+        h2 {
+            font-size: 76.42px;
+            line-height: 70px;
+            color: #000000;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+            margin: 0 0 50px 0;
+            text-align: center;
+            span {
+                color: #00c6ad;
+            }
+
+            @include max-1199 {
+                font-size: 55px;
+                line-height: 60px;
+            }
+
+            @include max-991 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+
+            @include max-767 {
+                text-align: center;
+                margin: 0 0 25px 0;
+                br {
+                    display: none;
+                }
+            }
+
+            @include max-575 {
+                font-size: 35px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            @include max-425 {
+                font-size: 32px;
+                line-height: 37px;
+            }
+        }
+        i {
+            p {
+                font-size: 27px;
+				line-height: 33px;
+				color: #000000;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+				margin: 25px 0 35px 0;
+                text-align: center;
+				@include max-991 {
+					font-size: 20px;
+					line-height: 26px;
+					margin: 15px 0 25px 0;
+				}
+				@include max-575 {
+					font-size: 18px;
+					line-height: 23px;
+					text-align: center;
+					padding: 0 20px;
+                }}
+        }
+        p {
+                font-size: 16px;
+				line-height: 22px;
+				color: #000000;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 500;
+                text-align: center;
+                padding: 0 290px;
+				@include max-991 {
+					font-size: 14px;
+					line-height: 20px;
+                    padding: 0 100px;
+					
+				}
+				@include max-575 {
+					font-size: 12px;
+					line-height: 18px;
+					padding: 0 25px ;
+				}
+        }
+    }
+    &::before {
+        content: url('./../../../../assets/img/testimonials-top.png');
+        position: absolute;
+        top: -4.5%;
+        right: 0;
+        z-index: -99;
+        @include max-767 {
+            display: none;
+        }
+    }
+    &::after {
+        content: url('./../../../../assets/img/testimonials-bottom.png');
+        position: absolute;
+        bottom: 45%;
+        left: 0;
+        width: auto;
+        @include max-767 {
+            display: none;
+        }
+    }
+}

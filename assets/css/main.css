@@ -12,6 +12,41 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding: 165px 0;
+  background-color: black;
+  position: relative;
+}
+.footer_inner h2 {
+  font-size: 35px;
+  line-height: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+.footer_inner ul li {
+  margin: 5px 0;
+}
+.footer_inner ul li a {
+  text-decoration: underline;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+.footer::after {
+  content: url("./../../../assets/img/footer-bottom.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .header-button {
   margin-top: 75px !important;
 }
@@ -36,26 +71,6 @@
 }
 .navigation-menu li a:hover {
   border-bottom: 8px solid #1747e7;
-}
-
-.wp-container-core-buttons-layout-1 {
-  justify-content: end !important;
-}
-
-.is-layout-flex {
-  margin: 0 0 0px 0 !important;
-}
-
-.has-custom-content-position {
-  padding-bottom: 0 !important;
-}
-
-.size-full {
-  margin: 0 !important;
-}
-
-.is-layout-constrained {
-  padding: 0 !important;
 }
 
 .secret {
@@ -173,6 +188,7 @@
   padding: 20px 0 20px 50px;
   border: 2px solid #b1b1b1;
   border-radius: 7px;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 991px) {
   .contact-form_First_heading__First-name p input {
@@ -193,6 +209,7 @@
   padding: 20px 0 20px 50px;
   border: 2px solid #b1b1b1;
   border-radius: 7px;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 991px) {
   .contact-form_First_heading_Last-name p input {
@@ -210,6 +227,7 @@
   padding: 20px 0 20px 50px;
   border: 2px solid #b1b1b1;
   border-radius: 7px;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 991px) {
   .contact-form__Email-Subject p input {
@@ -226,6 +244,7 @@
   width: 92%;
   border: 2px solid #b1b1b1;
   border-radius: 7px;
+  background-color: #f7f7f7;
 }
 .contact-form__Submit-Email p button {
   padding: 15px 150px;
@@ -255,21 +274,19 @@
   line-height: 55px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin-bottom: 55px !important;
+  margin-bottom: 55px;
   text-align: center;
 }
 @media screen and (max-width: 991px) {
   .contact-form__inner .row h2 {
     font-size: 45px;
     line-height: 50px;
-    margin-bottom: 40px !important;
   }
 }
 @media screen and (max-width: 767px) {
   .contact-form__inner .row h2 {
     font-size: 35px;
     line-height: 40px;
-    margin-bottom: 30px !important;
   }
 }
 
@@ -367,15 +384,9 @@
   top: 0;
   right: 0;
 }
-
-.footer {
-  padding: 165px 0 !important;
-  background-color: black;
-}
-
-.footer_inner__links h2 {
-  font-size: 35px;
-  line-height: 40px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+.step-service::after {
+  content: url("./../../img/step-section-bottom.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */

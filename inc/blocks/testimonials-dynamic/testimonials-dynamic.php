@@ -26,69 +26,37 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 
- function my_testimonials_block( $attr ) {
-    $args = array(
-        'numberposts'  => $attr['numberOfItems'],
-        'post_type'    => 'testimonial', // Set the custom post type
+ function my_testimonials_block( $attributes ) {
+    $output  = "<div class='testimonial section-padding'> <div class='container p-0'>";
+    $output .= ! empty( $attributes['Heading'] ) ? "<h2 class='testimonial___heading'>{$attributes['Heading']}</h2></div>" : '';
+    $args         = array(
+        'post_type'      => 'testimonial',
+        'posts_per_page' => $attributes['numberOfItems'],
     );
-    $my_posts = get_posts( $args );
-
-    if ( ! empty( $my_posts ) ) {
-        $output = '<div ' . get_block_wrapper_attributes() . '>';
-
-        if ( $attr['displayAuthorInfo'] ) {
-            $output .= '<div class="wp-block-author-box-author-plugin__author">';
-
-            if ( $attr['showAvatar'] ) {
-                $output .= '<div class="wp-block-author-box-author-plugin__avatar">' 
-                    . get_avatar( get_the_author_meta( 'ID' ), $attr['avatarSize'] ) 
-                    . '</div>';
-            }
-
-            $output .= '<div class="wp-block-author-box-author-plugin__author-content">';
-            $output .= '<div class="wp-block-author-box-author-plugin__name">' 
-                . get_the_author_meta( 'display_name' ) 
-                . '</div>';
-
-            if ( $attr['showBio'] ) {
-                $output .= '<div class="wp-block-author-box-author-plugin__description">' 
-                    . get_the_author_meta( 'description' ) 
-                    . '</div>';
-            }
-
-            $output .= '</div>';
-            $output .= '</div>';
-        }
-
-        $num_cols = $attr['columns'] > 1 ? strval( $attr['columns'] ) : '1';
-
-        $output .= '<ul class="wp-block-author-box-author-plugin__post-items columns-' . $num_cols . '">';
-        foreach ( $my_posts as $p ) {
-            $title     = $p->post_title ? $p->post_title : 'Default title';
-            $url       = esc_url( get_permalink( $p->ID ) );
-            $thumbnail = has_post_thumbnail( $p->ID ) ? get_the_post_thumbnail( $p->ID, 'large', array( 'class' => 'wp-block-author-box-author-plugin__post-thumbnail' ) ) : '';
-
-            $output .= '<li>';
-            if ( ! empty( $thumbnail ) && $attr['displayThumbnail'] ) {
-                $output .= $thumbnail;
-            }
-            $output .= '<h4 class="wp-block-author-box-author-plugin__post-title"><a href="' . $url . '">' . $title . '</a></h4>';
-            if ( $attr['displayDate'] ) {
-                $output .= '<time datetime="' . esc_attr( get_the_date( 'c', $p ) ) . '" class="wp-block-author-box-author-plugin__post-date">' . esc_html( get_the_date( '', $p ) ) . '</time>';
-            }
-            if ( get_the_excerpt( $p ) && $attr['displayExcerpt'] ) {
-                $output .= '<div class="wp-block-author-box-author-plugin__post-excerpt"><p>' . get_the_excerpt( $p ) . '</p></div>';
-            }
-
+    $testimonials = new WP_Query( $args );
+    if ( $testimonials->have_posts() ) {
+        $output .= '<div class="splide">';
+        $output .= '<div class="splide__track"><ul class="splide__list">';
+        while ( $testimonials->have_posts() ) {
+            $testimonials->the_post();
+            $output .= '<li class="splide__slide">';
+            $output .= '<div class="testimonial__inner">';
+            $output .= '<h2 class="testimonial__inner_name">' . get_the_title() . '</h2>';
+            $output .= '<i class="testimonial__inner_heading description-primary">' . get_the_content() . '</i>';
+            
+            $output .= '<p class="testimonial__inner_location description-primary">' . get_the_excerpt() . '</p>';
+            $output .= '</div> ';
             $output .= '</li>';
         }
-        $output .= '</ul>';
+        $output .= '</ul></div>';
         $output .= '</div>';
+        wp_reset_postdata();
+    } else {
+        $output .= '<strong>No testimonials found.</strong>';
     }
-
-    return $output ?? '<strong>Sorry. No posts matching your criteria!</strong>';
+    $output .= '</div>';
+    return $output;
 }
-
 
 function testimonials_dynamic_testimonials_dynamic_block_init() {
 	register_block_type( __DIR__ . '/build', array(

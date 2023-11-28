@@ -79,4 +79,10 @@
         top: 0;
         right: 0;
     }
+    &::after {
+        content: url('./../../img/step-section-bottom.png');
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }

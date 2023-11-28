@@ -13,7 +13,9 @@
 function walletup_frontend_theme_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/main.css', array(), 'all' );
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/library/bootstrap-grid.min.css', array(), 'all' );
+	wp_enqueue_style( 'splide-slider-css', get_template_directory_uri() . '/assets/css/library/splide.min.css', array(), 'all' );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), 1.1, true );
+	wp_enqueue_script( 'splide-slide-js', get_template_directory_uri() . '/assets/js/splide.min.js', array( 'jquery' ), 1.1, true );
 }
 add_action( 'wp_enqueue_scripts', 'walletup_frontend_theme_scripts' );
 
