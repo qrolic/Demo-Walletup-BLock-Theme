@@ -59,10 +59,10 @@ export default function Edit({ attributes, setAttributes }) {
 		<>
 			<section id="banner-description" {...useBlockProps()}>
 				<div className="banner-description">
-					<div className="container p-0">
+					
 						<div className="banner-description__inner">
 							<div className="row banner">
-								<div className="col-lg-4 col-md-4 col-4">
+								<div className="col-lg-4 col-md-4 col-4 p-0">
 									<div className="banner-description__inner_img">
 										<MediaUploadCheck>
 											<MediaUpload
@@ -87,7 +87,7 @@ export default function Edit({ attributes, setAttributes }) {
 										</MediaUploadCheck>
 									</div>
 								</div>
-								<div className="col-lg-8 col-md-8 col-8">
+								<div className="col-lg-8 col-md-8 col-8 p-0">
 									<div className="banner-description__inner_heading">
 										<TextControl
 											tagName="h4"
@@ -111,7 +111,7 @@ export default function Edit({ attributes, setAttributes }) {
 							</div>
 						</div>
 					</div>
-				</div>
+				
 			</section>
 		</>
 	);

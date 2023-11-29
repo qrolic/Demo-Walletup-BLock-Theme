@@ -32,7 +32,7 @@
 			}
 		}
 		&_heading {
-			margin-top: 150px;
+			margin: 195px 0 0 20px;
 			@include max-1199 {
 				margin-top: 125px;
 			}
@@ -61,13 +61,12 @@
 					line-height: 45px;
 				}
 				@include max-767 {
-					text-align: center;
 					br {
 						display: none;
 					}
 				}
 				@include max-575 {
-					font-size: 35px;
+					font-size: 38px;
 					line-height: 40px;
 					text-align: center;
 				}
@@ -84,11 +83,11 @@
 				color: #000000;
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 500;
-				margin: 35px 0 100px 0;
+				margin: 35px 0 100px 20px;
 				@include max-991 {
 					font-size: 14px;
 					line-height: 16px;
-					margin: 25px 0 50px 0;
+					margin: 25px 0 50px 20px;
 				}
 				@include max-575 {
 					font-size: 12px;

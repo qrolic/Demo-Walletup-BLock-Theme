@@ -20,15 +20,15 @@ export default function save(props) {
 	return (
 		<section id="banner-description" {...useBlockProps.save()}>
 			<div className="banner-description">
-			<div className="container p-0">
+			
 					<div className="banner-description__inner">
 						<div className="row banner">
-							<div className="col-lg-4 col-md-4 col-4">
+							<div className="col-lg-4 col-md-4 col-4 p-0">
 								<div className="banner-description__inner_img">
 								<img src={mediaURL}/>
 								</div>
 							</div>
-							<div className="col-lg-8 col-md-8 col-8">
+							<div className="col-lg-8 col-md-8 col-8 p-0">
 								<div className="banner-description__inner_heading">
 									<RichText.Content tagName="h4" value={Heading} />
 								</div>
@@ -38,7 +38,6 @@ export default function save(props) {
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 		</section>
 	);

@@ -1,26 +1,72 @@
-.header-button {
-    margin-top: 75px !important;
-    a {
-        font-family: 'Open Sans', sans-serif;
-	    font-weight: 600;
+.navigation {
+margin-top: 65px;
+    &-top-menu {
+        display: flex;
+        align-items: center;
+        @include max-600 {
+            flex-direction: row-reverse;
+        }
     }
-}
-.navigation-menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-top: 85px;
-    li {
-        a {
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
-            font-family: 'Open Sans', sans-serif;
-	        font-weight: 400;
-            padding: 15px;
-            &:hover {
-              border-bottom: 8px solid #1747e7;
+    &-menu {
+        list-style: none;
+
+        li {
+            a {
+                
+                span {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 20px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                    padding: 15px;
+                    margin: 0 20px;
+
+                    @include max-1199 {
+                        padding: 5px;
+                        margin: 0 10px;
+                    }
+
+                    @include max-991 {
+                        padding: 8px;
+                        margin: 0 0px;
+                    }
+
+                    &:hover {
+                        border-bottom: 8px solid #1747e7;
+                    }
+                }
             }
         }
     }
+
+    &-button {
+        
+        .button {
+            @include max-600 {
+                display: none;
+            }
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                border: 2px solid transparent;
+                padding: 12px 40px;
+
+                @include max-767 {
+                    padding: 12px 30px;
+                }
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                    border: 2px solid #000;
+                }
+            }
+        }
+    }
+}
+
+.has-modal-open {
+    max-width: 300px;
+    animation: none !important;
+    transition: all 500ms;
 }

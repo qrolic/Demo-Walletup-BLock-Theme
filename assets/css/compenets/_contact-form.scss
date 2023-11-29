@@ -22,10 +22,14 @@
 
             p {
                 input {
+                    font-size: 16px;
+                    color: #b1b1b1;
+                    font-family: 'Open sans' , 'sans serif';
+                    font-weight: 600;
                     width: 87%;
                     padding: 20px 0 20px 50px;
                     border: 2px solid #b1b1b1;
-                    border-radius: 7px;
+                    border-radius: 8px;
                     background-color: #f7f7f7;
 
                     @include max-991 {
@@ -45,11 +49,16 @@
 
             p {
                 input {
+                    font-size: 16px;
+                    color: #b1b1b1;
+                    font-family: 'Open sans' , 'sans serif';
+                    font-weight: 600;
                     width: 87%;
                     padding: 20px 0 20px 50px;
                     border: 2px solid #b1b1b1;
-                    border-radius: 7px;
+                    border-radius: 8px;
                     background-color: #f7f7f7;
+                    margin-bottom: 25px;
 
                     @include max-991 {
                         width: 80%;
@@ -70,9 +79,13 @@
                 width: 88%;
                 padding: 20px 0 20px 50px;
                 border: 2px solid #b1b1b1;
-                border-radius: 7px;
+                border-radius: 8px;
                 background-color: #f7f7f7;
-
+                margin-bottom: 25px;
+                font-size: 16px;
+                color: #b1b1b1;
+                font-family: 'Open sans' , 'sans serif';
+                font-weight: 600;
                 @include max-991 {
                     width: 85%;
                 }
@@ -89,10 +102,21 @@
         p {
             span {
                 textarea {
-                    width: 92%;
+                    width: 88%;
                     border: 2px solid #b1b1b1;
-                    border-radius: 7px;
+                    border-radius: 8px;
                     background-color: #f7f7f7;
+                    padding: 20px 0 20px 50px;
+                    color: #b1b1b1;
+                    font-size: 16px;
+                    font-family: 'Open sans' , 'sans serif';
+                    font-weight: 600;
+                    @include max-991 {
+                        width: 85%;
+                    }
+                    @include max-767 {
+                        width: 82%;
+                    }
                 }
             }
         }
@@ -101,12 +125,21 @@
     &__Submit-Email {
         p {
             button {
+                font-size: 17px;
                 padding: 15px 150px;
                 color: #fff;
                 background-color: #2746e6;
+                font-family: 'Open sans', 'Sans Serif';
+                font-weight: 800;
                 border-radius: 7px;
-                border: none;
+                border: 2px solid transparent;
                 margin-top: 80px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                    border: 2px solid black;
+                }
 
                 @include max-1199 {
                     margin-top: 50px;

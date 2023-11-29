@@ -1,6 +1,8 @@
 .footer {
-  padding: 165px 0 !important;
   background-color: black;
+}
+.footer_inner {
+  padding: 165px 0;
 }
 
 .footer_inner__links h2 {

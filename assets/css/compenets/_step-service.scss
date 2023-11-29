@@ -39,18 +39,18 @@
                 }
 
                 @include max-991 {
-                    font-size: 55px;
-                    line-height: 60px;
-                }
-
-                @include max-767 {
                     font-size: 45px;
                     line-height: 50px;
                 }
 
-                @include max-575 {
+                @include max-767 {
                     font-size: 35px;
                     line-height: 40px;
+                }
+
+                @include max-575 {
+                    font-size: 30px;
+                    line-height: 35px;
                 }
             }
 
@@ -74,15 +74,21 @@
         }
     }
     &::before {
-        content: url('./../../img/step-section-top.png');
+        content: url("./../img/step-section-top.png");
         position: absolute;
         top: 0;
         right: 0;
+        @include max-991 {
+            display: none;
+        }
     }
     &::after {
-        content: url('./../../img/step-section-bottom.png');
+        content: url("./../img/step-section-bottom.png");
         position: absolute;
         bottom: 0;
         left: 0;
+        @include max-991 {
+            display: none;
+        }
     }
 }

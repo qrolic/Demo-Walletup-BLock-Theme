@@ -10,15 +10,12 @@
 .wp-block-author-box-author-plugin {
 	background-color: #21759b;
 	color: #fff;
-	padding: .6em;
+	padding: 0;
 	ul {
 		padding: 0;
 		list-style-type: none;
-		// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
-		// https://learncssgrid.com/
 		display: grid;
 		gap: .5em;
-		// https://sass-lang.com/documentation/at-rules/control/for
 		@for $i from 2 through 4 {
 			&.columns-#{ $i } {
 				grid-template-columns: repeat(#{ $i }, 1fr);
@@ -58,8 +55,19 @@
 .wp-block-author-box-author-plugin__post-items {
 		display: flex;
 		list-style: none;
-		
+		// ul {
+		// 	@include max-991 {
+		// 	flex-wrap: wrap;
+		// 	}
 		li {
+			position: relative;
+			// @include max-991 {
+			// 	width: 50%;
+			// 	}
+			// 	@include max-767 {
+			// 		width: 100%;
+			// 		}
+			
 			
 			h4 {
 				margin: 25px 15px;
@@ -76,8 +84,14 @@
 					}
 				}
 			}
+			img {
+				position: absolute;
+				bottom: -70px;
+				right: 20px;
+			}
 		}
-}
+	}
+// }
 .wp-block-author-box-author-plugin__post-excerpt {
 	p {
 	font-size: 14px;

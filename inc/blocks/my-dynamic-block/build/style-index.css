@@ -26,7 +26,7 @@
 .wp-block-author-box-author-plugin {
   background-color: #21759b;
   color: #fff;
-  padding: 0.6em;
+  padding: 0;
 }
 .wp-block-author-box-author-plugin ul {
   padding: 0;
@@ -76,6 +76,9 @@
   display: flex;
   list-style: none;
 }
+.wp-block-author-box-author-plugin__post-items li {
+  position: relative;
+}
 .wp-block-author-box-author-plugin__post-items li h4 {
   margin: 25px 15px;
 }
@@ -90,6 +93,11 @@
   font-size: 25px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
+}
+.wp-block-author-box-author-plugin__post-items li img {
+  position: absolute;
+  bottom: -70px;
+  right: 20px;
 }
 
 .wp-block-author-box-author-plugin__post-excerpt p {
