@@ -10,18 +10,18 @@
 	background-color: #00c6ad;
 	&__inner {
 		padding: 87px 0;
-		margin-top: 85px !important;
+		margin-top: 85px ;
 		@include max-991 {
 			padding: 70px 0;
-			margin-top: 65px !important;
+			margin-top: 65px ;
 		}
 		@include max-767 {
 			padding: 50px 0;
-			margin-top: 50px !important;
+			margin-top: 50px ;
 		}
 		@include max-575 {
 			padding: 35px 0;
-			margin-top: 35px !important;
+			margin-top: 35px ;
 		}
 		&_heading {
 			@include max-575 {

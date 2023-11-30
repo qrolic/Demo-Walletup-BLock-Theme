@@ -84,12 +84,12 @@ html.has-modal-open {
 }
 @media screen and (max-width: 991px) {
   .secret {
-    margin-top: 50px;
+    margin: 50px 0 50px 0;
   }
 }
 @media screen and (max-width: 767px) {
   .secret {
-    margin-top: 0px;
+    margin: 0 0 50px 0;
   }
 }
 .secret__inner {
@@ -111,13 +111,103 @@ html.has-modal-open {
   font-weight: 800;
   margin-bottom: 62px !important;
 }
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 {
+    font-size: 70px;
+    line-height: 76px;
+    margin-bottom: 50px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 {
+    font-size: 60px;
+    line-height: 66px;
+    margin: 0 0 40px 0 !important;
+  }
+  .secret__inner .row h2 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .secret__inner .row h2 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .secret__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.secret__inner .row h2 strong {
+  color: #00c6ad;
+  font-size: 81.61px;
+  line-height: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 strong {
+    font-size: 70px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 strong {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 strong {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
+  }
+}
 .secret__inner .row .secret-img {
-  right: -100px;
+  margin: 0;
+  position: relative;
+  right: -120px;
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row .secret-img {
+    display: none;
+  }
 }
 
 .step-service {
   margin-top: 100px;
+  padding: 130px 0;
   position: relative;
+}
+@media screen and (max-width: 1199px) {
+  .step-service {
+    margin-top: 75px;
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step-service {
+    margin-top: 50px;
+    padding: 50px 65px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service {
+    margin-top: 0px;
+    padding: 25px;
+  }
 }
 .step-service__inner {
   position: relative;
@@ -136,32 +226,33 @@ html.has-modal-open {
   line-height: 80px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin: 0 !important;
-  padding: 20px 0 !important;
+  margin: 0;
+  padding: 20px 0;
   border-bottom: 7px solid #fff;
 }
 @media screen and (max-width: 1199px) {
   .step-service__inner .row h2 {
     font-size: 65px;
-    line-height: 60px;
+    line-height: 70px;
   }
 }
 @media screen and (max-width: 991px) {
-  .step-service__inner .row h2 {
-    font-size: 55px;
-    line-height: 60px;
-  }
-}
-@media screen and (max-width: 767px) {
   .step-service__inner .row h2 {
     font-size: 45px;
     line-height: 50px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .step-service__inner .row h2 {
     font-size: 35px;
     line-height: 40px;
+    padding: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row h2 {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 .step-service__inner .row p {
@@ -169,14 +260,46 @@ html.has-modal-open {
   line-height: 23px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  padding: 35px 0 !important;
+  padding: 35px 0;
+  text-align: justify;
 }
-.step-service__inner .row .step-pending {
-  padding: 0 50px !important;
+@media screen and (max-width: 575px) {
+  .step-service__inner .row p {
+    padding: 20px 0;
+  }
+}
+.step-service__inner .step-pending {
+  padding: 0 50px;
+}
+@media screen and (max-width: 991px) {
+  .step-service__inner .step-pending {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .step-pending {
+    padding: 0;
+  }
 }
 .step-service::before {
-  content: url("./../../img/step-section-top.png");
+  content: url("./../img/step-section-top.png");
   position: absolute;
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 991px) {
+  .step-service::before {
+    display: none;
+  }
+}
+.step-service::after {
+  content: url("./../img/step-section-bottom.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 991px) {
+  .step-service::after {
+    display: none;
+  }
 }/*# sourceMappingURL=admin.css.map */
