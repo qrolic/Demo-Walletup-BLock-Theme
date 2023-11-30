@@ -28,3 +28,4 @@ function banner_discription_section_banner_discription_section_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'banner_discription_section_banner_discription_section_block_init' );
+

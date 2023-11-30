@@ -1,3 +1,8 @@
+<!--
+    pattern name : contact-form-section
+    description : this is contact form in a pattern
+-->
+
 <?php
 register_block_pattern(
     'my-plugin/contact-form',

@@ -1,3 +1,8 @@
+<!--
+    pattern name : event-section
+    description : this is an image, heading, and text in a pattern
+-->
+
 <?php
 register_block_pattern(
     'my-plugin/event',

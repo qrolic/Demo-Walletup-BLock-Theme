@@ -49,7 +49,7 @@ html.has-modal-open {
 }
 
 .header-button {
-  margin-top: 75px !important;
+  margin-top: 75px;
 }
 .header-button a {
   font-family: "Open Sans", sans-serif;
@@ -109,20 +109,20 @@ html.has-modal-open {
   line-height: 75px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin-bottom: 62px !important;
+  margin-bottom: 62px;
 }
 @media screen and (max-width: 1199px) {
   .secret__inner .row h2 {
     font-size: 70px;
     line-height: 76px;
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 991px) {
   .secret__inner .row h2 {
     font-size: 60px;
     line-height: 66px;
-    margin: 0 0 40px 0 !important;
+    margin: 0 0 40px 0;
   }
   .secret__inner .row h2 br {
     display: none;

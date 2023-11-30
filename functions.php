@@ -76,7 +76,6 @@ add_filter('excerpt_length', 'mytheme_custom_excerpt_length', 999);
 /**
  * Import all pattern register category.
  */
-require_once 'pattern/about.php';
 require_once 'pattern/banner-description.php';
 require_once 'pattern/event.php';
 require_once 'pattern/secret.php';

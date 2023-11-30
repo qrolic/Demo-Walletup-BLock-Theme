@@ -65,8 +65,9 @@
 }
 
 // default class remove css
+.wp-block-columns {
 .wp-block-column {
     flex-basis: unset !important;
     flex-grow: unset !important;
-
+}
 }
