@@ -321,7 +321,7 @@
 }
 
 .splide__arrows--rtl .splide__arrow--prev svg {
-    transform: scaleX(1)
+    transform: scaleX(1);
 }
 
 .splide__arrows--rtl .splide__arrow--next {
@@ -330,7 +330,7 @@
 }
 
 .splide__arrows--rtl .splide__arrow--next svg {
-    transform: scaleX(-1)
+    transform: scaleX(-1);
 }
 
 .splide__arrows--ttb .splide__arrow {

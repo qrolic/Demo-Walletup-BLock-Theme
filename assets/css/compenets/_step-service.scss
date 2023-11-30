@@ -1,36 +1,41 @@
-
 .step-service {
     margin-top: 100px;
-    padding: 130px 0 !important;
+    padding: 130px 0;
     position: relative;
-@include max-1199 {
-    margin-top: 75px;
-    padding: 100px !important;
-}
-@include max-991 {
-    margin-top: 50px;
-    padding: 75px !important;
-}
-@include max-767 {
-    margin-top: 35px;
-    padding: 35px !important;
-}
+
+    @include max-1199 {
+        margin-top: 75px;
+        padding: 100px;
+    }
+
+    @include max-991 {
+        margin-top: 50px;
+        padding: 50px 65px;
+    }
+
+    @include max-767 {
+        margin-top: 0px;
+        padding: 25px;
+    }
+
     &__inner {
         position: relative;
 
         .row {
             flex-wrap: nowrap;
             align-items: center;
+
             @include max-767 {
                 flex-wrap: wrap;
             }
+
             h2 {
                 font-size: 76px;
                 line-height: 80px;
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 800;
-                margin: 0 !important;
-                padding: 20px 0 !important;
+                margin: 0 ;
+                padding: 20px 0;
                 border-bottom: 7px solid #fff;
 
                 @include max-1199 {
@@ -46,6 +51,7 @@
                 @include max-767 {
                     font-size: 35px;
                     line-height: 40px;
+                    padding: 0 0 20px 0 ;
                 }
 
                 @include max-575 {
@@ -59,34 +65,45 @@
                 line-height: 23px;
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 500;
-                padding: 35px 0 !important;
+                padding: 35px 0 ;
+                text-align: justify;
+
+                @include max-575 {
+                    padding: 20px 0 ;
+                }
             }
         }
 
         .step-pending {
-            padding: 0 50px !important;
+            padding: 0 50px ;
+
             @include max-991 {
-                padding: 0 25px !important;
+                padding: 0 25px ;
             }
+
             @include max-767 {
-                padding: 0 !important;
+                padding: 0 ;
             }
         }
     }
+
     &::before {
         content: url("./../img/step-section-top.png");
         position: absolute;
         top: 0;
         right: 0;
+
         @include max-991 {
             display: none;
         }
     }
+
     &::after {
         content: url("./../img/step-section-bottom.png");
         position: absolute;
         bottom: 0;
         left: 0;
+
         @include max-991 {
             display: none;
         }

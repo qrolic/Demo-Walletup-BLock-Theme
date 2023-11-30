@@ -24,7 +24,7 @@
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
 .skill-boost {
-  margin: 150px 0 50px 0;
+  margin: 195px 0 0px 0;
 }
 @media screen and (max-width: 991px) {
   .skill-boost {
@@ -88,7 +88,7 @@
 }
 .skill-boost__inner_heading h2 {
   font-size: 81px;
-  line-height: 70px;
+  line-height: 80px;
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -121,7 +121,7 @@
   .skill-boost__inner_heading h2 {
     font-size: 37px;
     line-height: 40px;
-    text-align: center;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -137,6 +137,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   margin: 35px 0 100px 0;
+  text-align: justify;
 }
 @media screen and (max-width: 991px) {
   .skill-boost__inner_description p {
@@ -149,7 +150,6 @@
   .skill-boost__inner_description p {
     font-size: 12px;
     line-height: 14px;
-    text-align: center;
     padding: 0 20px;
   }
 }

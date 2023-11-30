@@ -2,9 +2,9 @@
 register_block_pattern(
     'my-plugin/event',
     array(
-        'title'      => __( 'event', 'my-plugin' ),
-        'categories'  => array( 'wpdocs-patterns' ),
-        'content'    => '<!-- wp:cover {"dimRatio":90,"overlayColor":"white","minHeight":50,"minHeightUnit":"vh","contentPosition":"top left","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"5vw","right":"5vw","bottom":"0vw","left":"5vw"},"margin":{"top":"0"}}}} -->
+        'title' => __('event', 'my-plugin'),
+        'categories' => array('wpdocs-patterns'),
+        'content' => '<!-- wp:cover {"dimRatio":90,"overlayColor":"white","minHeight":50,"minHeightUnit":"vh","contentPosition":"top left","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"5vw","right":"5vw","bottom":"0vw","left":"5vw"},"margin":{"top":"0"}}}} -->
         <div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left" style="margin-top:0;padding-top:5vw;padding-right:5vw;padding-bottom:0vw;padding-left:5vw;min-height:50vh"><span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim-90 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"backgroundColor":"white","layout":{"type":"constrained"}} -->
         <div class="wp-block-group has-white-background-color has-background"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:columns -->

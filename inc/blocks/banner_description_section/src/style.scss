@@ -7,11 +7,12 @@
 @import "../../../../assets/css/variable/variable";
 
 .banner-description {
-	margin: 0 ;
-	padding: 0 ;
+	margin: 0;
+	padding: 0;
 
 	&__inner {
-		margin: 10px 0;
+		margin: 10px 10px;
+
 		&_heading {
 			h4 {
 				font-size: 16px;
@@ -20,9 +21,11 @@
 				font-weight: 800;
 				letter-spacing: -1px;
 				margin: 0;
+
 				span {
 					color: #00c6ad;
 				}
+
 				.change-color {
 					color: #1747e7;
 				}
@@ -36,13 +39,14 @@
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 600;
 				margin: 8px 0 0 0;
+				text-align: justify;
 			}
 		}
+
 		&_img {
 			text-align: center;
 			padding: 0;
-            margin: 0;
+			margin: 0;
 		}
 	}
 }
-

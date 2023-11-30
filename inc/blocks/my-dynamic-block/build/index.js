@@ -82,12 +82,12 @@ function Edit({
     authorDetails,
     posts
   } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_5__.useSelect)(select => {
-    const _authorId = select('core/editor').getCurrentPostAttribute('author');
-    const authorDetails = _authorId ? select('core').getUser(_authorId) : null;
-    const posts = select('core').getEntityRecords('postType', 'post', {
-      'author': _authorId,
-      'per_page': numberOfItems,
-      '_embed': true
+    const _authorId = select("core/editor").getCurrentPostAttribute("author");
+    const authorDetails = _authorId ? select("core").getUser(_authorId) : null;
+    const posts = select("core").getEntityRecords("postType", "post", {
+      author: _authorId,
+      per_page: numberOfItems,
+      _embed: true
     });
     return {
       authorDetails: authorDetails,
@@ -96,21 +96,21 @@ function Edit({
   }, [numberOfItems]);
   const avatarSizes = [];
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Author Info', 'author-plugin')
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Author Info", "author-plugin")
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Display Author Info', 'author-plugin'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Display Author Info", "author-plugin"),
     checked: displayAuthorInfo,
     onChange: () => setAttributes({
       displayAuthorInfo: !displayAuthorInfo
     })
   })), displayAuthorInfo && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show avatar'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show avatar"),
     checked: showAvatar,
     onChange: () => setAttributes({
       showAvatar: !showAvatar
     })
   }), showAvatar && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Avatar size'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Avatar size"),
     value: avatarSize,
     options: avatarSizes,
     onChange: size => {
@@ -119,13 +119,13 @@ function Edit({
       });
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Bio', 'author-plugin'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show Bio", "author-plugin"),
     checked: showBio,
     onChange: () => setAttributes({
       showBio: !showBio
     })
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content Settings', 'author-plugin')
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Content Settings", "author-plugin")
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.QueryControls, {
     numberOfItems: numberOfItems,
     onNumberOfItemsChange: value => setAttributes({
@@ -134,7 +134,7 @@ function Edit({
     minItems: 1,
     maxItems: 10
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Number of Columns', 'author-plugin'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Number of Columns", "author-plugin"),
     value: columns,
     onChange: value => setAttributes({
       columns: value
@@ -143,19 +143,19 @@ function Edit({
     max: 4,
     required: true
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Featured Image', 'author-plugin'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show Featured Image", "author-plugin"),
     checked: displayThumbnail,
     onChange: () => setAttributes({
       displayThumbnail: !displayThumbnail
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Date', 'author-plugin'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Show Date", "author-plugin"),
     checked: displayDate,
     onChange: () => setAttributes({
       displayDate: !displayDate
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Display Excerpt', 'author-plugin'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Display Excerpt", "author-plugin"),
     checked: displayExcerpt,
     onChange: () => setAttributes({
       displayExcerpt: !displayExcerpt
@@ -183,17 +183,17 @@ function Edit({
   }, posts && posts.map(post => {
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
       key: post.id
-    }, displayThumbnail && post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0] && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    }, displayThumbnail && post._embedded && post._embedded["wp:featuredmedia"] && post._embedded["wp:featuredmedia"][0] && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       className: "wp-block-author-box-author-plugin__post-thumbnail",
-      src: post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url,
-      alt: post._embedded['wp:featuredmedia'][0].alt_text
+      src: post._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url,
+      alt: post._embedded["wp:featuredmedia"][0].alt_text
     }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
       className: "wp-block-author-box-author-plugin__post-title"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
       href: post.link
-    }, post.title.rendered ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_6__.RawHTML, null, post.title.rendered) : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Default title', 'author-plugin'))), displayDate && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("time", {
+    }, post.title.rendered ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_6__.RawHTML, null, post.title.rendered) : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Default title", "author-plugin"))), displayDate && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("time", {
       className: "wp-block-author-box-author-plugin__post-date",
-      dateTime: (0,_wordpress_date__WEBPACK_IMPORTED_MODULE_7__.format)('c', post.date_gmt)
+      dateTime: (0,_wordpress_date__WEBPACK_IMPORTED_MODULE_7__.format)("c", post.date_gmt)
     }, (0,_wordpress_date__WEBPACK_IMPORTED_MODULE_7__.dateI18n)((0,_wordpress_date__WEBPACK_IMPORTED_MODULE_7__.__experimentalGetSettings)().formats.date, post.date_gmt)), displayExcerpt &&
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
     post.excerpt?.rendered && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {

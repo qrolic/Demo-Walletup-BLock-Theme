@@ -2,9 +2,9 @@
 register_block_pattern(
     'my-plugin/contact-form',
     array(
-        'title'      => __( 'contact form', 'my-plugin' ),
-        'categories'  => array( 'wpdocs-patterns' ),
-        'content'    => '<!-- wp:group {"className":"contact-form","layout":{"type":"default"}} -->
+        'title' => __('contact form', 'my-plugin'),
+        'categories' => array('wpdocs-patterns'),
+        'content' => '<!-- wp:group {"className":"contact-form","layout":{"type":"default"}} -->
         <div class="wp-block-group contact-form"><!-- wp:group {"className":"contact-form__inner","layout":{"type":"default"}} -->
         <div class="wp-block-group contact-form__inner"><!-- wp:group {"className":"container","layout":{"type":"default"}} -->
         <div class="wp-block-group container"><!-- wp:group {"className":"row","layout":{"type":"default"}} -->

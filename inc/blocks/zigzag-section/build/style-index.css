@@ -103,13 +103,12 @@
   padding: 10px 30px;
   border-radius: 30px;
   background-color: #1747e7;
-  border: 2px solid transparent;
   cursor: pointer;
 }
 .zig-zag__inner_button a:hover {
   background-color: #fff;
   color: #000;
-  border: 2px solid #000;
+  transition: all 500ms;
 }
 @media screen and (max-width: 1199px) {
   .zig-zag__inner_button a {

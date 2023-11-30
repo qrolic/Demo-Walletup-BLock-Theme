@@ -28,7 +28,7 @@
   padding: 0;
 }
 .banner-description__inner {
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 .banner-description__inner_heading h4 {
   font-size: 16px;
@@ -50,6 +50,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   margin: 8px 0 0 0;
+  text-align: justify;
 }
 .banner-description__inner_img {
   text-align: center;

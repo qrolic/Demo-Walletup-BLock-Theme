@@ -1,18 +1,29 @@
 .navigation {
-margin-top: 65px;
+    margin-top: 65px;
+
+    @include max-991 {
+        margin-top: 40px;
+    }
+
+    @include max-600 {
+        margin-top: 25px;
+    }
+
     &-top-menu {
         display: flex;
         align-items: center;
+
         @include max-600 {
             flex-direction: row-reverse;
         }
     }
+
     &-menu {
         list-style: none;
 
         li {
             a {
-                
+
                 span {
                     text-decoration: none;
                     color: #000;
@@ -34,6 +45,7 @@ margin-top: 65px;
 
                     &:hover {
                         border-bottom: 8px solid #1747e7;
+                        font-weight: 600;
                     }
                 }
             }
@@ -41,32 +53,37 @@ margin-top: 65px;
     }
 
     &-button {
-        
+
         .button {
             @include max-600 {
                 display: none;
             }
+
             a {
                 font-family: 'Open Sans', sans-serif;
-                font-weight: 600;
+                font-weight: 800;
                 border: 2px solid transparent;
-                padding: 12px 40px;
+                padding: 10px 50px;
 
                 @include max-767 {
-                    padding: 12px 30px;
+                    padding: 10px 30px;
                 }
+
                 &:hover {
                     background-color: #fff;
                     color: #000;
                     border: 2px solid #000;
+                    transition: all 500ms;
                 }
             }
         }
     }
-}
 
-.has-modal-open {
-    max-width: 300px;
-    animation: none !important;
-    transition: all 500ms;
+
+    .has-modal-open {
+        max-width: 300px;
+        animation: none !important;
+        transition: all 500ms;
+        padding: 0 10px 0 25px;
+    }
 }

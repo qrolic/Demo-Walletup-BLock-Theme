@@ -24,14 +24,19 @@ span {
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+html.has-modal-open {
+  overflow: visible;
+}
+
 .footer {
-  padding: 150px 0;
+  padding: 150px 0 125px;
   background-color: black;
   position: relative;
 }
@@ -77,6 +82,9 @@ html, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+.footer_inner ul li a:hover {
+  text-decoration: none;
+}
 .footer::after {
   content: url("./../img/footer-bottom.png");
   position: absolute;
@@ -97,6 +105,16 @@ html, body {
 
 .navigation {
   margin-top: 65px;
+}
+@media screen and (max-width: 991px) {
+  .navigation {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navigation {
+    margin-top: 25px;
+  }
 }
 .navigation-top-menu {
   display: flex;
@@ -133,6 +151,7 @@ html, body {
 }
 .navigation-menu li a span:hover {
   border-bottom: 8px solid #1747e7;
+  font-weight: 600;
 }
 @media screen and (max-width: 600px) {
   .navigation-button .button {
@@ -141,25 +160,26 @@ html, body {
 }
 .navigation-button .button a {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   border: 2px solid transparent;
-  padding: 12px 40px;
+  padding: 10px 50px;
 }
 @media screen and (max-width: 767px) {
   .navigation-button .button a {
-    padding: 12px 30px;
+    padding: 10px 30px;
   }
 }
 .navigation-button .button a:hover {
   background-color: #fff;
   color: #000;
   border: 2px solid #000;
+  transition: all 500ms;
 }
-
-.has-modal-open {
+.navigation .has-modal-open {
   max-width: 300px;
   animation: none !important;
   transition: all 500ms;
+  padding: 0 10px 0 25px;
 }
 
 .secret {
@@ -230,6 +250,37 @@ html, body {
     font-size: 35px;
     line-height: 40px;
     text-align: center;
+  }
+}
+.secret__inner .row h2 strong {
+  color: #00c6ad;
+  font-size: 81.61px;
+  line-height: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 strong {
+    font-size: 70px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 strong {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 strong {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
   }
 }
 .secret__inner .row .secret-img {
@@ -413,36 +464,46 @@ html, body {
   .contact-form__inner .row h2 {
     font-size: 45px;
     line-height: 50px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 767px) {
   .contact-form__inner .row h2 {
     font-size: 35px;
     line-height: 40px;
+    margin-bottom: 30px;
   }
+}
+
+.wpcf7-response-output {
+  font-size: 17px;
+  line-height: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 15px 0 !important;
 }
 
 .step-service {
   margin-top: 100px;
-  padding: 130px 0 !important;
+  padding: 130px 0;
   position: relative;
 }
 @media screen and (max-width: 1199px) {
   .step-service {
     margin-top: 75px;
-    padding: 100px !important;
+    padding: 100px;
   }
 }
 @media screen and (max-width: 991px) {
   .step-service {
     margin-top: 50px;
-    padding: 75px !important;
+    padding: 50px 65px;
   }
 }
 @media screen and (max-width: 767px) {
   .step-service {
-    margin-top: 35px;
-    padding: 35px !important;
+    margin-top: 0px;
+    padding: 25px;
   }
 }
 .step-service__inner {
@@ -462,8 +523,8 @@ html, body {
   line-height: 80px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin: 0 !important;
-  padding: 20px 0 !important;
+  margin: 0;
+  padding: 20px 0;
   border-bottom: 7px solid #fff;
 }
 @media screen and (max-width: 1199px) {
@@ -482,6 +543,7 @@ html, body {
   .step-service__inner .row h2 {
     font-size: 35px;
     line-height: 40px;
+    padding: 0 0 20px 0;
   }
 }
 @media screen and (max-width: 575px) {
@@ -495,19 +557,25 @@ html, body {
   line-height: 23px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  padding: 35px 0 !important;
+  padding: 35px 0;
+  text-align: justify;
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row p {
+    padding: 20px 0;
+  }
 }
 .step-service__inner .step-pending {
-  padding: 0 50px !important;
+  padding: 0 50px;
 }
 @media screen and (max-width: 991px) {
   .step-service__inner .step-pending {
-    padding: 0 25px !important;
+    padding: 0 25px;
   }
 }
 @media screen and (max-width: 767px) {
   .step-service__inner .step-pending {
-    padding: 0 !important;
+    padding: 0;
   }
 }
 .step-service::before {

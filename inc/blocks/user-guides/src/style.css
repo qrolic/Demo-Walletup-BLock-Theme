@@ -51,7 +51,7 @@
   }
 }
 .user-guides__inner_heading {
-  margin: 195px 0 0 20px;
+  margin: 195px 0 0 0px;
 }
 @media screen and (max-width: 1199px) {
   .user-guides__inner_heading {
@@ -100,7 +100,7 @@
   .user-guides__inner_heading h2 {
     font-size: 38px;
     line-height: 40px;
-    text-align: center;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -115,20 +115,20 @@
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  margin: 35px 0 100px 20px;
+  margin: 35px 0 100px 0px;
+  text-align: justify;
 }
 @media screen and (max-width: 991px) {
   .user-guides__inner_description p {
     font-size: 14px;
     line-height: 16px;
-    margin: 25px 0 50px 20px;
+    margin: 25px 0 40px 0px;
   }
 }
 @media screen and (max-width: 575px) {
   .user-guides__inner_description p {
     font-size: 12px;
     line-height: 14px;
-    text-align: center;
     padding: 0 20px;
   }
 }/*# sourceMappingURL=style.css.map */

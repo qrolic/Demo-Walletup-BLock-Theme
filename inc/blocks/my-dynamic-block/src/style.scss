@@ -55,22 +55,26 @@
 .wp-block-author-box-author-plugin__post-items {
 		display: flex;
 		list-style: none;
-		// ul {
-		// 	@include max-991 {
-		// 	flex-wrap: wrap;
-		// 	}
+		margin-top: 100px !important;
+		padding: 0;
+			@include max-991 {
+			flex-wrap: wrap;
+			margin-top: 50px !important;
+			}
 		li {
 			position: relative;
-			// @include max-991 {
-			// 	width: 50%;
-			// 	}
-			// 	@include max-767 {
-			// 		width: 100%;
-			// 		}
+			padding: 0 25px !important;
+			@include max-991 {
+				width: 50%;
+				margin-bottom: 80px;
+				}
+				@include max-767 {
+					width: 100%;
+					}
 			
 			
 			h4 {
-				margin: 25px 15px;
+				margin:0 0 25px 0;
 				a {
 					font-size: 25px;
 					color: #000000;
@@ -87,7 +91,7 @@
 			img {
 				position: absolute;
 				bottom: -70px;
-				right: 20px;
+				right: 27px;
 			}
 		}
 	}
@@ -97,6 +101,7 @@
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	margin:0 15px;
+	margin:0;
+	text-align: justify;
 	}
 }

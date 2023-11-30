@@ -68,12 +68,11 @@
 				padding: 10px 30px;
 				border-radius: 30px;
 				background-color: #1747e7;
-				border: 2px solid transparent;
 				cursor: pointer;
                 &:hover {
                 background-color: #fff;
                 color: #000;
-                border: 2px solid #000;
+				transition: all 500ms;
                 }
 				@include max-1199 {
 					font-size: 16px;

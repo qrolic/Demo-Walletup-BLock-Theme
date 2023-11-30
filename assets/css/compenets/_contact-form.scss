@@ -24,7 +24,7 @@
                 input {
                     font-size: 16px;
                     color: #b1b1b1;
-                    font-family: 'Open sans' , 'sans serif';
+                    font-family: 'Open sans', 'sans serif';
                     font-weight: 600;
                     width: 87%;
                     padding: 20px 0 20px 50px;
@@ -51,7 +51,7 @@
                 input {
                     font-size: 16px;
                     color: #b1b1b1;
-                    font-family: 'Open sans' , 'sans serif';
+                    font-family: 'Open sans', 'sans serif';
                     font-weight: 600;
                     width: 87%;
                     padding: 20px 0 20px 50px;
@@ -84,8 +84,9 @@
                 margin-bottom: 25px;
                 font-size: 16px;
                 color: #b1b1b1;
-                font-family: 'Open sans' , 'sans serif';
+                font-family: 'Open sans', 'sans serif';
                 font-weight: 600;
+
                 @include max-991 {
                     width: 85%;
                 }
@@ -109,11 +110,13 @@
                     padding: 20px 0 20px 50px;
                     color: #b1b1b1;
                     font-size: 16px;
-                    font-family: 'Open sans' , 'sans serif';
+                    font-family: 'Open sans', 'sans serif';
                     font-weight: 600;
+
                     @include max-991 {
                         width: 85%;
                     }
+
                     @include max-767 {
                         width: 82%;
                     }
@@ -135,6 +138,7 @@
                 border: 2px solid transparent;
                 margin-top: 80px;
                 cursor: pointer;
+
                 &:hover {
                     background-color: #fff;
                     color: #000;
@@ -171,15 +175,23 @@
                 @include max-991 {
                     font-size: 45px;
                     line-height: 50px;
-                    // margin-bottom: 40px !important;
+                    margin-bottom: 40px;
                 }
 
                 @include max-767 {
                     font-size: 35px;
                     line-height: 40px;
-                    // margin-bottom: 30px !important;
+                    margin-bottom: 30px;
                 }
             }
         }
     }
+}
+
+.wpcf7-response-output {
+    font-size: 17px;
+    line-height: 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 15px 0 !important;
 }

@@ -7,7 +7,7 @@
  @import "../../../../assets/css/variable/_variable.scss";
 
 .skill-boost {
-	margin:150px 0 50px 0 ;
+	margin:195px 0 0px 0 ;
 	@include max-991 {
 		margin:75px 0 25px 0 ;
 	}
@@ -50,7 +50,7 @@
 			}
 			h2 {
 				font-size: 81px;
-				line-height: 70px;
+				line-height: 80px;
 				color: #000000;
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 800;
@@ -75,7 +75,7 @@
 				@include max-575 {
 					font-size: 37px;
 					line-height: 40px;
-					text-align: center;
+					padding: 0 20px;
 				}
 				@include max-425 {
 					font-size: 32px;
@@ -91,6 +91,7 @@
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 500;
 				margin: 35px 0 100px 0;
+				text-align: justify;
 				@include max-991 {
 					font-size: 14px;
 					line-height: 16px;
@@ -99,7 +100,6 @@
 				@include max-575 {
 					font-size: 12px;
 					line-height: 14px;
-					text-align: center;
 					padding: 0 20px;
 				}
 			}

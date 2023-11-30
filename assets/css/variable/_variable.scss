@@ -1,14 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @font-face {
-    font-family:"MYRIADPRO-REGULAR";
-    src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
 }
+
 @font-face {
-    font-family:"MYRIADPRO-BOLD";
-    src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
 }
+
 @font-face {
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
@@ -16,43 +17,49 @@
 
 
 @mixin min-1440 {
-    @media screen and (min-width: 1440px) {
-      @content;
-    }
+  @media screen and (min-width: 1440px) {
+    @content;
   }
-  @mixin max-1199 {
-    @media screen and (max-width: 1199px) {
-      @content;
-    }
+}
+
+@mixin max-1199 {
+  @media screen and (max-width: 1199px) {
+    @content;
   }
-  @mixin max-991 {
-    @media screen and (max-width: 991px) {
-      @content;
-    }
+}
+
+@mixin max-991 {
+  @media screen and (max-width: 991px) {
+    @content;
   }
-  @mixin max-782 {
-    @media screen and (max-width: 782px) {
-      @content;
-    }
+}
+
+@mixin max-782 {
+  @media screen and (max-width: 782px) {
+    @content;
   }
-  @mixin max-767 {
-    @media screen and (max-width: 767px) {
-      @content;
-    }
+}
+
+@mixin max-767 {
+  @media screen and (max-width: 767px) {
+    @content;
   }
-  @mixin max-600 {
-    @media screen and (max-width: 600px) {
-      @content;
-    }
+}
+
+@mixin max-600 {
+  @media screen and (max-width: 600px) {
+    @content;
   }
-  @mixin max-575 {
-    @media screen and (max-width: 575px) {
-      @content;
-    }
+}
+
+@mixin max-575 {
+  @media screen and (max-width: 575px) {
+    @content;
   }
-  
-  @mixin max-425 {
-    @media screen and (max-width: 425px) {
-      @content;
-    }
+}
+
+@mixin max-425 {
+  @media screen and (max-width: 425px) {
+    @content;
   }
+}

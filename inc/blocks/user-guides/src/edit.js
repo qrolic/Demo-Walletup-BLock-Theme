@@ -12,13 +12,12 @@ import { __ } from "@wordpress/i18n";
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import {
-	useBlockProps,
-	RichText,
-	MediaUpload,
-	MediaUploadCheck,
-
+  useBlockProps,
+  RichText,
+  MediaUpload,
+  MediaUploadCheck,
 } from "@wordpress/block-editor";
-import { Button , TextControl } from "@wordpress/components";
+import { Button, TextControl } from "@wordpress/components";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -37,79 +36,79 @@ import "./editor.scss";
  * @return {Element} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { Heading, mediaID, mediaURL,description  } = attributes;
-	const onChangeHeading = (newHeading) => {
-		setAttributes({ Heading: newHeading });
-	};
-	const onSelectImage = (media) => {
-		setAttributes({
-			mediaURL: media.url,
-			mediaID: media.id,
-		});
-	};
-	const onRemovemedia = () => {
-		setAttributes({
-			mediaID: undefined,
-		});
-	};
-	return (
-		<>
-			<section id="user-guides" {...useBlockProps()}>
-				<div className="user-guides">
-					<div className="container p-0">
-						<div className="user-guides__inner">
-							<div className="row">
-								<div className="col-lg-6 col-md-6">
-									<div className="user-guides__inner_img">
-										<MediaUploadCheck>
-											<MediaUpload
-												onSelect={onSelectImage}
-												allowedTypes="image"
-												value={mediaID}
-												render={({ open }) => (
-													<button onClick={open}>
-														{!mediaID ? (
-															__("Upload Image")
-														) : (
-															<img src={mediaURL} />
-														)}
-													</button>
-												)}
-											/>
-										</MediaUploadCheck>
-										<MediaUploadCheck>
-											<Button onClick={onRemovemedia} isLink isDestructive>
-												{__("remove image", "post-media-selector")}
-											</Button>
-										</MediaUploadCheck>
-									</div>
-								</div>
-								<div className="col-lg-6 col-md-6">
-									<div className="user-guides__inner_heading">
-										<TextControl
-											tagName="h2"
-											value={Heading}
-											onChange={onChangeHeading}
-											placeholder={__("Enter user-guides text...", "walletup")}
-										/>
-									</div>
-									<div className="user-guides__inner_description">
-										<RichText
-											tagName="p"
-											className="description"
-											placeholder={__("description")}
-											value={description}
-											onChange={(newText) =>
-												setAttributes({ description: newText })
-											}
-										/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</>
-	);
+  const { Heading, mediaID, mediaURL, description } = attributes;
+  const onChangeHeading = (newHeading) => {
+    setAttributes({ Heading: newHeading });
+  };
+  const onSelectImage = (media) => {
+    setAttributes({
+      mediaURL: media.url,
+      mediaID: media.id,
+    });
+  };
+  const onRemovemedia = () => {
+    setAttributes({
+      mediaID: undefined,
+    });
+  };
+  return (
+    <>
+      <section id="user-guides" {...useBlockProps()}>
+        <div className="user-guides">
+          <div className="container p-0">
+            <div className="user-guides__inner">
+              <div className="row">
+                <div className="col-lg-6 col-md-6">
+                  <div className="user-guides__inner_img">
+                    <MediaUploadCheck>
+                      <MediaUpload
+                        onSelect={onSelectImage}
+                        allowedTypes="image"
+                        value={mediaID}
+                        render={({ open }) => (
+                          <button onClick={open}>
+                            {!mediaID ? (
+                              __("Upload Image")
+                            ) : (
+                              <img src={mediaURL} />
+                            )}
+                          </button>
+                        )}
+                      />
+                    </MediaUploadCheck>
+                    <MediaUploadCheck>
+                      <Button onClick={onRemovemedia} isLink isDestructive>
+                        {__("remove image", "post-media-selector")}
+                      </Button>
+                    </MediaUploadCheck>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-6">
+                  <div className="user-guides__inner_heading">
+                    <TextControl
+                      tagName="h2"
+                      value={Heading}
+                      onChange={onChangeHeading}
+                      placeholder={__("Enter user-guides text...", "walletup")}
+                    />
+                  </div>
+                  <div className="user-guides__inner_description">
+                    <RichText
+                      tagName="p"
+                      className="description"
+                      placeholder={__("description")}
+                      value={description}
+                      onChange={(newText) =>
+                        setAttributes({ description: newText })
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

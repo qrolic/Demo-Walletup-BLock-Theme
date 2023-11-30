@@ -1,6 +1,5 @@
-
 .footer {
-    padding: 150px 0;
+    padding: 150px 0 125px;
     background-color: black;
     position: relative;
 
@@ -43,6 +42,10 @@
                     line-height: 26px;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 400;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -54,6 +57,7 @@
         bottom: 0;
         right: 0;
         z-index: 999;
+
         @include max-991 {
             display: none;
         }
@@ -61,8 +65,8 @@
 }
 
 // default class remove css
- .wp-block-column {
+.wp-block-column {
     flex-basis: unset !important;
     flex-grow: unset !important;
-    
+
 }
