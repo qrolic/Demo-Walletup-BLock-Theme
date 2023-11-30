@@ -91,7 +91,7 @@ require_once 'inc/blocks/home-hero-section/home-hero-section.php';
 require_once 'inc/blocks/banner_description_section/banner_description_section.php';
 require_once 'inc/blocks/zigzag-section/zigzag-section.php';
 require_once 'inc/blocks/user-guides/user-guides.php';
-require_once 'inc/blocks/my-dynamic-block/my-dynamic-block.php';
+require_once 'inc/blocks/walletup-post-section/walletup-post-section.php';
 require_once 'inc/blocks/service-section/service-section.php';
 require_once 'inc/blocks/skill-boost/skill-boost.php';
 

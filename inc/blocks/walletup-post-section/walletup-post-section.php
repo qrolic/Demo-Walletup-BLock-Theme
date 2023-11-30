@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       My Dynamic Block
- * Description:       this is get post in My Dynamic Block..
+ * Plugin Name:       walletup-post-section
+ * Description:       this is get post in walletup-post-section
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
@@ -24,7 +24,7 @@ if (!defined('ABSPATH')) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function my_dynamic_block($attr)
+function walletup_post_section($attr)
 {
 	$args = array(
 		'numberposts' => $attr['numberOfItems']
@@ -90,7 +90,7 @@ function my_dynamic_block($attr)
 function my_dynamic_block_my_dynamic_block_block_init()
 {
 	register_block_type(__DIR__ . '/build', array(
-		'render_callback' => 'my_dynamic_block'
+		'render_callback' => 'walletup_post_section'
 	));
 }
 add_action('init', 'my_dynamic_block_my_dynamic_block_block_init');

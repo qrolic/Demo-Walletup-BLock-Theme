@@ -1,17 +1,17 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/my-dynamic-block",
+  "name": "create-block/walletup-post-section",
   "version": "0.1.0",
-  "title": "My Dynamic Block",
-  "category": "widgets",
+  "title": "walletup-post-section",
+  "category": "walletup",
   "icon": "admin-post",
-  "description": "this is get post in My Dynamic Block.",
+  "description": "this is get post in walletup-post-section.",
   "example": {},
   "supports": {
     "html": false
   },
-  "textdomain": "my-dynamic-block",
+  "textdomain": "walletup-post-section",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
