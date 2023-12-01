@@ -20,7 +20,7 @@ add_action('after_setup_theme', 'myfirsttheme_setup');
 add_theme_support('block-templates');
 add_theme_support('block-template-parts');
 
-function prefix_theme_setup()
+function walletup_block_theme_setup()
 {
 	// Add support for menus.
 	add_theme_support('menus');
@@ -64,7 +64,7 @@ function prefix_theme_setup()
 	// editor styles add.
 	add_editor_style('editor-style.css');
 }
-add_action('after_setup_theme', 'prefix_theme_setup');
+add_action('after_setup_theme', 'walletup_block_theme_setup');
 
 
 function mytheme_custom_excerpt_length($length)
@@ -79,7 +79,7 @@ add_filter('excerpt_length', 'mytheme_custom_excerpt_length', 999);
 require_once 'pattern/banner-description.php';
 require_once 'pattern/event.php';
 require_once 'pattern/secret.php';
-require_once 'pattern/contact-forn.php';
+require_once 'pattern/contact-form.php';
 
 
 /**

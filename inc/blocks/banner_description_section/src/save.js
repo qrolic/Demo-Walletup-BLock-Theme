@@ -23,7 +23,7 @@ export default function save(props) {
 			
 					<div className="banner-description__inner">
 						<div className="row banner">
-							<div className="col-lg-4 col-md-4 col-4 p-0">
+							<div className="col-lg-4 col-md-4 col-3 p-0">
 								<div className="banner-description__inner_img">
 								<img src={mediaURL}/>
 								</div>

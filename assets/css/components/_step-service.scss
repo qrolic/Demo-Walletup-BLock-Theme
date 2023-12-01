@@ -1,3 +1,8 @@
+/**
+ * This file is display show heading, text and img in step-service section.
+ *  walletup block theme
+ */
+
 .step-service {
     margin-top: 100px;
     padding: 130px 0;
@@ -15,7 +20,7 @@
 
     @include max-767 {
         margin-top: 0px;
-        padding: 25px;
+        padding: 50px;
     }
 
     &__inner {

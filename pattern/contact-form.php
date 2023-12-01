@@ -1,9 +1,8 @@
-<!--
-    pattern name : contact-form-section
-    description : this is contact form in a pattern
--->
-
 <?php
+/**
+ * This file is display contact form in a pattern.
+ *  walletup block theme
+ */
 register_block_pattern(
     'my-plugin/contact-form',
     array(

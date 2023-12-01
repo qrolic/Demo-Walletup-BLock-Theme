@@ -68,7 +68,7 @@ export default function Edit({ attributes, setAttributes }) {
           <div className="container p-0">
             <div className="zig-zag__inner">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-7 col-md-7 col-12">
                   <div className="zig-zag__inner_heading">
                     <RichText
                       tagName="h2"
@@ -89,7 +89,7 @@ export default function Edit({ attributes, setAttributes }) {
                     />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-5 col-md-5 col-12">
                   <div className="zig-zag__inner_img">
                     <MediaUploadCheck>
                       <MediaUpload

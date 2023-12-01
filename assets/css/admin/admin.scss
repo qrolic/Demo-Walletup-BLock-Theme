@@ -1,6 +1,12 @@
+/**
+ * This file is all scss file enqueue in admin site.
+ *  walletup block theme
+ */
+
 @import "../variable/variable.scss";
 @import "../core/global.scss";
 @import "./layout/footer";
 @import "./layout/header";
-@import "./componets/secret";
-@import "./componets/step-pending";
+@import "./layout/sidebar";
+@import "./components/secret";
+@import "./components/step-service";

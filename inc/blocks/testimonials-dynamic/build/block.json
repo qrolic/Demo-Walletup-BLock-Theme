@@ -6,7 +6,7 @@
   "title": "Testimonials-dynamic",
   "category": "walletup",
   "icon": "smiley",
-  "description": "This is a slider in testimonials block",
+  "description": "Testimonials block contains reviews given by clients",
   "example": {},
   "supports": {
     "html": false

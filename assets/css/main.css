@@ -1,3 +1,7 @@
+/**
+ * This file is all scss file enqueue.
+ *  walletup block theme
+ */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @font-face {
@@ -12,6 +16,10 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
+/**
+ * This file is display show all global css.
+ *  walletup block theme
+ */
 h1,
 h2,
 h3,
@@ -179,9 +187,19 @@ html.has-modal-open {
   max-width: 300px;
   animation: none !important;
   transition: all 500ms;
-  padding: 0 10px 0 25px;
+  padding: 0 15px 0 25px;
+}
+@media screen and (max-width: 575px) {
+  .navigation .has-modal-open {
+    max-width: 250px;
+    box-shadow: 5px 5px 15px -2px;
+  }
 }
 
+/**
+ * This file is display show heading, text and img in secret section.
+ *  walletup block theme
+ */
 .secret {
   margin-top: 100px;
 }
@@ -291,6 +309,10 @@ html.has-modal-open {
   }
 }
 
+/**
+ * This file is display show contact form.
+ *  walletup block theme
+ */
 @font-face {
   font-family: "MYRIADPRO-REGULAR";
   src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
@@ -414,7 +436,8 @@ html.has-modal-open {
 }
 @media screen and (max-width: 767px) {
   .contact-form__Your-message p span textarea {
-    width: 82%;
+    width: 88%;
+    padding: 15px 0 15px 15px;
   }
 }
 .contact-form__Submit-Email p button {
@@ -442,11 +465,14 @@ html.has-modal-open {
 @media screen and (max-width: 991px) {
   .contact-form__Submit-Email p button {
     margin-top: 35px;
+    padding: 12px 125px;
   }
 }
 @media screen and (max-width: 767px) {
   .contact-form__Submit-Email p button {
     margin-top: 25px;
+    padding: 10px 100px;
+    font-size: 15px;
   }
 }
 .contact-form__inner .row h2 {
@@ -471,6 +497,12 @@ html.has-modal-open {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 575px) {
+  .contact-form__inner .row h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 
 .wpcf7-form .wpcf7-response-output {
   font-size: 17px;
@@ -480,6 +512,10 @@ html.has-modal-open {
   padding: 15px 0 !important;
 }
 
+/**
+ * This file is display show heading, text and img in step-service section.
+ *  walletup block theme
+ */
 .step-service {
   margin-top: 100px;
   padding: 130px 0;
@@ -500,7 +536,7 @@ html.has-modal-open {
 @media screen and (max-width: 767px) {
   .step-service {
     margin-top: 0px;
-    padding: 25px;
+    padding: 50px;
   }
 }
 .step-service__inner {

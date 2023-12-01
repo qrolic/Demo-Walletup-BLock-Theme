@@ -1,3 +1,7 @@
+/**
+ * This file is all scss file enqueue in admin site.
+ *  walletup block theme
+ */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: "MYRIADPRO-REGULAR";
@@ -11,6 +15,10 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
+/**
+ * This file is display show all global css.
+ *  walletup block theme
+ */
 h1,
 h2,
 h3,
@@ -74,6 +82,10 @@ html.has-modal-open {
   border-bottom: 8px solid #1747e7;
 }
 
+/**
+ * This file is display show heading, text and img in secret section admin site.
+ *  walletup block theme
+ */
 .secret {
   margin-top: 100px;
 }
@@ -186,6 +198,10 @@ html.has-modal-open {
   }
 }
 
+/**
+ * This file is display show heading, text and img in secret section admin site.
+ *  walletup block theme
+ */
 .step-service {
   margin-top: 100px;
   padding: 130px 0;

@@ -180,6 +180,21 @@
   position: absolute;
   right: 0;
 }
+@media screen and (max-width: 991px) {
+  .splide__arrow--next {
+    right: 1em !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .splide__arrow--next {
+    right: -2.5em !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .splide__arrow--next {
+    right: 1em !important;
+  }
+}
 
 .splide__arrow--prev {
   left: 8em !important;
@@ -191,6 +206,21 @@
   content: url(images/slider-Arrow.0ba6ec6a.png);
   position: absolute;
   left: 0;
+}
+@media screen and (max-width: 991px) {
+  .splide__arrow--prev {
+    left: 1em !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .splide__arrow--prev {
+    left: -2.5em !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .splide__arrow--prev {
+    left: 1em !important;
+  }
 }
 
 .splide__arrow {

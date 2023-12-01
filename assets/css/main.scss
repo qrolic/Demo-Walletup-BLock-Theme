@@ -1,7 +1,12 @@
+/**
+ * This file is all scss file enqueue.
+ *  walletup block theme
+ */
+
 @import "./variable/variable";
 @import "./core/global.scss";
 @import "./layout/footer";
 @import "./layout/header";
-@import "./compenets/secret";
-@import "./compenets/contact-form";
-@import "./compenets/step-service";
+@import "./components/secret";
+@import "./components/contact-form";
+@import "./components/step-service";

@@ -1,4 +1,5 @@
 <?php
+
 // Add a custom block category.
 add_filter(
     'block_categories_all',

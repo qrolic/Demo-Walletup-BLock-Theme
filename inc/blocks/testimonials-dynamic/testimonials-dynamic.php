@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Testimonials-dynamic
- * Description:       This is a slider in testimonials block
+ * Description:       Testimonials block contains reviews given by clients
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0

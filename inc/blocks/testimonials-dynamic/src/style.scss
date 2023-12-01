@@ -159,6 +159,15 @@
     right: 0;
    }
    right: 8em !important;
+   @include max-991 {
+    right: 1em !important;
+   }
+   @include max-767 {
+    right: -2.5em !important;
+   }
+   @include max-575 {
+    right: 1em !important;
+   }
 }
 .splide__arrow--prev {
     svg {
@@ -170,6 +179,15 @@
         left: 0;
        }
        left: 8em !important;
+       @include max-991 {
+        left: 1em !important;
+       }
+       @include max-767 {
+        left: -2.5em !important;
+       }
+       @include max-575 {
+        left: 1em !important;
+       }
 }
 .splide__arrow {
     background: none !important;

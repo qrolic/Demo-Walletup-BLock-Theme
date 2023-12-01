@@ -1,9 +1,8 @@
-<!--
-    pattern name : banner-decription-section
-    description : this is an image, heading, and text in a pattern
--->
-
 <?php
+/**
+ * This file is display an image, heading, and text in a pattern.
+ *  walletup block theme
+ */
 register_block_pattern(
     'my-plugin/banner-description',
     array(

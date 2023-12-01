@@ -57,5 +57,17 @@
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 767px) {
+  .banner-description__inner_img {
+    text-align: end;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-description__inner .banner {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style-index.css.map*/

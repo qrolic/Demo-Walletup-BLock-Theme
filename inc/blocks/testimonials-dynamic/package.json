@@ -1,7 +1,7 @@
 {
 	"name": "testimonials-dynamic",
 	"version": "0.1.0",
-	"description": "This is a slider in testimonials block",
+	"description": "Testimonials block contains reviews given by clients",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

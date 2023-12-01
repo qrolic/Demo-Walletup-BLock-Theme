@@ -1,7 +1,7 @@
 {
 	"name": "home-hero-section",
 	"version": "0.1.0",
-	"description": "This block shows the banner section on the homepage",
+	"description": "This block shows the banner section in text on the homepage",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

@@ -8,7 +8,7 @@
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       my-dynamic-block
+ * Text Domain:       walletup-post-section
  *
  * @package           create-block
  */
@@ -69,9 +69,7 @@ function walletup_post_section($attr)
 			$thumbnail = has_post_thumbnail($p->ID) ? get_the_post_thumbnail($p->ID, 'large', array('class' => 'wp-block-author-box-author-plugin__post-thumbnail')) : '';
 
 			$output .= '<li class="col-lg-4 col-md-6 col-12">';
-			if (!empty($thumbnail) && $attr['displayThumbnail']) {
-				$output .= $thumbnail;
-			}
+			
 			$output .= '<h4 class="wp-block-author-box-author-plugin__post-title"><a href="' . $url . '">' . $title . '</a></h4>';
 			if ($attr['displayDate']) {
 				$output .= '<time datetime="' . esc_attr(get_the_date('c', $p)) . '" class="wp-block-author-box-author-plugin__post-date">' . esc_html(get_the_date('', $p)) . '</time>';
@@ -79,6 +77,7 @@ function walletup_post_section($attr)
 			if (get_the_excerpt($p) && $attr['displayExcerpt']) {
 				$output .= '<div class="wp-block-author-box-author-plugin__post-excerpt"><p>' . get_the_excerpt($p) . '</p></div>';
 			}
+			$output .= '<a href="' . $url . '"><img src="http://localhost/walletup/wp-content/uploads/2023/11/Arrow-7.png"></a>';
 
 			$output .= '</li>';
 		}

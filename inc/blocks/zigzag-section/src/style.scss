@@ -24,7 +24,7 @@
 			margin-top: 35px ;
 		}
 		&_heading {
-			@include max-575 {
+			@include max-767 {
 				text-align: center;
 			}
 			h2 {
@@ -39,8 +39,8 @@
 					line-height: 65px;
 				}
 				@include max-991 {
-					font-size: 50px;
-					line-height: 55px;
+					font-size: 45px;
+					line-height: 50px;
 				}
 				@include max-767 {
 					font-size: 35px;
@@ -53,6 +53,9 @@
 			@include max-575 {
 				text-align: center;
 				padding: 20px 0 30px 0 ;
+			}
+			@include max-767 {
+				text-align: center;
 			}
 			@include max-991 {
 				padding: 20px 0 30px 0 ;
@@ -99,11 +102,16 @@
 			@include max-575 {
 				width: 300px;
 			}
+			@include max-767 {
+				width: 350px !important;
 			}
 			@include max-991 {
+				width: 100%;
+			}
+			}
+			@include max-767 {
 				text-align: center;
 			}
-			
 		}
 	}
 }
