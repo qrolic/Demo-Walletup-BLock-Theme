@@ -7,15 +7,13 @@
 @import "../../../../assets/css/variable/_variable.scss";
 
 .home-hero {
-  padding: 100px 0px;
-  @include max-1199 {
-    padding: 85px 0 ;
-  }
+  padding: 150px 0px;
+
   @include max-991 {
-    padding: 65px 0 ;
+    padding: 100px 0;
   }
-  @include max-767 {
-    padding: 50px 0 ;
+  @include max-575 {
+    padding: 75px 0;
   }
 
   .home-hero__inner_heading {
@@ -28,25 +26,34 @@
       color: black;
       text-align: center;
       margin: 0;
-      @include max-1199{
+
+      @include max-1199 {
         font-size: 70px;
         line-height: 65px;
       }
-      @include max-991{
+
+      @include max-991 {
         font-size: 55px;
         line-height: 50px;
       }
-      @include max-767{
+
+      @include max-767 {
         font-size: 45px;
         line-height: 40px;
       }
-      @include max-575{
+
+      @include max-575 {
         font-size: 40px;
         line-height: 35px;
       }
+
       @include max-425 {
         font-size: 30px;
         line-height: 35px;
+      }
+
+      span {
+        color: #00c6ad;
       }
     }
   }

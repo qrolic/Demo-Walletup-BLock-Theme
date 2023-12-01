@@ -1,0 +1,27 @@
+/**
+ * This file is display show all global css.
+ *  walletup block theme
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html.has-modal-open {
+    overflow: visible;
+}

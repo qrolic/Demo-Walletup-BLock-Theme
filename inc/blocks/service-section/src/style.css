@@ -71,6 +71,9 @@
   margin: 0;
   letter-spacing: -4px;
 }
+.service-section__inner_heading h2 span {
+  color: #ffffff;
+}
 @media screen and (max-width: 1199px) {
   .service-section__inner_heading h2 {
     font-size: 65px;
@@ -87,8 +90,14 @@
   .service-section__inner_heading h2 {
     font-size: 38px;
     line-height: 44px;
-    text-align: center;
     letter-spacing: -1px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .service-section__inner_heading h2 {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -119,6 +128,13 @@
   padding: 10px 40px;
   border-radius: 30px;
   letter-spacing: -1px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.service-section__inner_button a:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
 }
 @media screen and (max-width: 1199px) {
   .service-section__inner_button a {

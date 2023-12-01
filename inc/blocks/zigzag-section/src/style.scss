@@ -10,17 +10,21 @@
 	background-color: #00c6ad;
 	&__inner {
 		padding: 87px 0;
+		margin-top: 85px ;
 		@include max-991 {
-			padding: 75px 0;
+			padding: 70px 0;
+			margin-top: 65px ;
 		}
 		@include max-767 {
-			padding: 65px 0;
+			padding: 50px 0;
+			margin-top: 50px ;
 		}
 		@include max-575 {
-			padding: 50px 0;
+			padding: 40px 0;
+			margin-top: 40px ;
 		}
 		&_heading {
-			@include max-575 {
+			@include max-767 {
 				text-align: center;
 			}
 			h2 {
@@ -35,12 +39,19 @@
 					line-height: 65px;
 				}
 				@include max-991 {
-					font-size: 50px;
-					line-height: 55px;
+					font-size: 45px;
+					line-height: 50px;
 				}
 				@include max-767 {
-					font-size: 35px;
-					line-height: 40px;
+					font-size: 40px;
+					line-height: 45px;
+					br {
+						display: none;
+					}
+				}
+				@include max-575 {
+					font-size: 31px;
+					line-height: 35px;
 				}
 			}
 		}
@@ -48,21 +59,31 @@
 			padding: 35px 0;
 			@include max-575 {
 				text-align: center;
-				padding: 20px 0 30px 0 !important;
+				padding: 20px 0 30px 0 ;
+			}
+			@include max-767 {
+				text-align: center;
 			}
 			@include max-991 {
-               padding: 50px 0;
+				padding: 25px 0 40px 0 ;
 			}
+			
 			a {
 				font-size: 17px;
 				line-height: 23px;
 				text-decoration: none;
-				color: #ffffff !important;
+				color: #ffffff ;
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 800;
 				padding: 10px 30px;
 				border-radius: 30px;
 				background-color: #1747e7;
+				cursor: pointer;
+                &:hover {
+                background-color: #fff;
+                color: #000;
+				transition: all 500ms;
+                }
 				@include max-1199 {
 					font-size: 16px;
 					line-height: 20px;
@@ -88,11 +109,16 @@
 			@include max-575 {
 				width: 300px;
 			}
+			@include max-767 {
+				width: 350px !important;
 			}
 			@include max-991 {
+				width: 100%;
+			}
+			}
+			@include max-767 {
 				text-align: center;
 			}
-			
 		}
 	}
 }

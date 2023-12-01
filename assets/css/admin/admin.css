@@ -1,3 +1,7 @@
+/**
+ * This file is all scss file enqueue in admin site.
+ *  walletup block theme
+ */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: "MYRIADPRO-REGULAR";
@@ -11,14 +15,307 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
+/**
+ * This file is display show all global css.
+ *  walletup block theme
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html.has-modal-open {
+  overflow: visible;
+}
+
+.footer {
+  background-color: black;
+}
+.footer_inner {
+  padding: 165px 0;
+}
+
+.footer_inner__links h2 {
+  font-size: 35px;
+  line-height: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.header-button {
+  margin-top: 75px;
+}
+.header-button a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 85px;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+}
+.navigation-menu li a:hover {
+  border-bottom: 8px solid #1747e7;
+}
+
+/**
+ * This file contains all the CSS of the secret section.
+ *  walletup block theme
+ */
+.secret {
+  margin-top: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .secret {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret {
+    margin: 50px 0 50px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret {
+    margin: 0 0 50px 0;
+  }
+}
+.secret__inner {
+  position: relative;
+}
 .secret__inner .row {
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row {
+    flex-wrap: wrap;
+  }
 }
 .secret__inner .row h2 {
   font-size: 81.61px;
   line-height: 75px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin-bottom: 62px !important;
+  margin-bottom: 62px;
+}
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 {
+    font-size: 70px;
+    line-height: 76px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 {
+    font-size: 60px;
+    line-height: 66px;
+    margin: 0 0 40px 0;
+  }
+  .secret__inner .row h2 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .secret__inner .row h2 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .secret__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.secret__inner .row h2 strong {
+  color: #00c6ad;
+  font-size: 81.61px;
+  line-height: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 strong {
+    font-size: 70px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 strong {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 strong {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
+  }
+}
+.secret__inner .row .secret-img {
+  margin: 0;
+  position: relative;
+  right: -120px;
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row .secret-img {
+    display: none;
+  }
+}
+
+/**
+ * This file contains all the CSS of the step service section.
+ *  walletup block theme
+ */
+.step-service {
+  margin-top: 100px;
+  padding: 130px 0;
+  position: relative;
+}
+@media screen and (max-width: 1199px) {
+  .step-service {
+    margin-top: 75px;
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step-service {
+    margin-top: 50px;
+    padding: 50px 65px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service {
+    margin-top: 0px;
+    padding: 25px;
+  }
+}
+.step-service__inner {
+  position: relative;
+}
+.step-service__inner .row {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .row {
+    flex-wrap: wrap;
+  }
+}
+.step-service__inner .row h2 {
+  font-size: 76px;
+  line-height: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 7px solid #fff;
+}
+@media screen and (max-width: 1199px) {
+  .step-service__inner .row h2 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step-service__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+    padding: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+.step-service__inner .row p {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding: 35px 0;
+  text-align: justify;
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row p {
+    padding: 20px 0;
+  }
+}
+.step-service__inner .step-pending {
+  padding: 0 50px;
+}
+@media screen and (max-width: 991px) {
+  .step-service__inner .step-pending {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .step-pending {
+    padding: 0;
+  }
+}
+.step-service::before {
+  content: url("./../img/step-section-top.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 991px) {
+  .step-service::before {
+    display: none;
+  }
+}
+.step-service::after {
+  content: url("./../img/step-section-bottom.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 991px) {
+  .step-service::after {
+    display: none;
+  }
 }/*# sourceMappingURL=admin.css.map */

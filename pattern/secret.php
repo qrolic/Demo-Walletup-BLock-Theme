@@ -1,10 +1,14 @@
 <?php
+/**
+ * This file is display an image, heading, and text in a pattern.
+ *  walletup block theme
+ */
 register_block_pattern(
     'my-plugin/secret',
     array(
-        'title'      => __( 'Secret', 'my-plugin' ),
-        'categories'  => array( 'wpdocs-patterns' ),
-        'content'    => '<!-- wp:group {"className":"secret","layout":{"type":"default"}} -->
+        'title' => __('Secret', 'my-plugin'),
+        'categories' => array('wpdocs-patterns'),
+        'content' => '<!-- wp:group {"className":"secret","layout":{"type":"default"}} -->
         <div class="wp-block-group secret"><!-- wp:group {"className":"secret__inner","layout":{"type":"default"}} -->
         <div class="wp-block-group secret__inner"><!-- wp:group {"className":"container","layout":{"type":"default"}} -->
         <div class="wp-block-group container"><!-- wp:group {"className":"row","layout":{"type":"default"}} -->

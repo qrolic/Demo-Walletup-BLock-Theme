@@ -1,0 +1,108 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ @import "../../../../assets/css/variable/variable.scss";
+
+.wp-block-author-box-author-plugin {
+	background-color: #21759b;
+	color: #fff;
+	padding: 0;
+	ul {
+		padding: 0;
+		list-style-type: none;
+		display: grid;
+		gap: .5em;
+		@for $i from 2 through 4 {
+			&.columns-#{ $i } {
+				grid-template-columns: repeat(#{ $i }, 1fr);
+			}
+		}
+		li {
+			list-style: none;
+			display: flex;
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+		}
+		
+	}
+}
+.wp-block-author-box-author-plugin__author {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.wp-block-author-box-author-plugin__avatar {
+	margin-right: 1em;
+}
+
+.wp-block-author-box-author-plugin__author-content {
+	flex-basis: 0;
+    flex-grow: 1;
+}
+.wp-block-author-box-author-plugin__post-title {
+	a {
+		text-decoration: none;
+		color: #000000;
+		font-size: 20px;
+	}
+}
+.wp-block-author-box-author-plugin__post-items {
+		display: flex;
+		list-style: none;
+		margin-top: 100px !important;
+		padding: 0;
+			@include max-991 {
+			flex-wrap: wrap;
+			margin-top: 50px !important;
+			}
+		li {
+			position: relative;
+			padding: 0 25px !important;
+			@include max-991 {
+				width: 50%;
+				margin-bottom: 80px;
+				}
+				@include max-767 {
+					width: 100%;
+					padding: 0 20px !important;
+					}
+			
+			
+			h4 {
+				margin:0 0 25px 0;
+				a {
+					font-size: 25px;
+					color: #000000;
+					font-family: 'Open Sans', sans-serif;
+			        font-weight: 800;
+					span {
+						color: #00c6ad;
+						font-size: 25px;
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 800;
+					}
+				}
+			}
+			img {
+				position: absolute;
+				bottom: -70px;
+				right: 27px;
+			}
+		}
+	}
+
+.wp-block-author-box-author-plugin__post-excerpt {
+	p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	margin:0;
+	text-align: justify;
+	}
+}

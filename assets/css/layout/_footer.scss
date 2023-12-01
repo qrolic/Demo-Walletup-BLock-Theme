@@ -1,0 +1,73 @@
+.footer {
+    padding: 150px 0 125px;
+    background-color: black;
+    position: relative;
+
+    @include max-1199 {
+        padding: 125px 0;
+    }
+
+    @include max-991 {
+        padding: 75px 0;
+    }
+
+    @include max-767 {
+        padding: 50px 0;
+    }
+
+    @include max-575 {
+        padding: 40px 0;
+    }
+
+    &_inner {
+        // padding: 0;
+        margin: 0;
+
+        h2 {
+            font-size: 35px;
+            line-height: 40px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+            margin-bottom: 35px;
+        }
+
+        ul {
+            li {
+                margin: 5px 0;
+
+                a {
+                    text-decoration: underline #f0f0f0;
+                    padding: 5px 0;
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: url("./../img/footer-bottom.png");
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+
+        @include max-991 {
+            display: none;
+        }
+    }
+}
+
+// default class remove css
+.wp-block-columns {
+.wp-block-column {
+    flex-basis: unset !important;
+    flex-grow: unset !important;
+}
+}

@@ -12,13 +12,13 @@ import { __ } from "@wordpress/i18n";
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import {
-	useBlockProps,
-	RichText,
-	MediaUpload,
-	MediaUploadCheck,
-	InspectorControls
+  useBlockProps,
+  RichText,
+  MediaUpload,
+  MediaUploadCheck,
+  InspectorControls,
 } from "@wordpress/block-editor";
-import { Button, PanelBody, TextControl  } from "@wordpress/components";
+import { Button, PanelBody, TextControl } from "@wordpress/components";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -37,24 +37,24 @@ import "./editor.scss";
  * @return {Element} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { Heading, mediaID, mediaURL,buttonText,buttonURL  } = attributes;
-	const onChangeHeading = (newHeading) => {
-		setAttributes({ Heading: newHeading });
-	};
-	const onSelectImage = (media) => {
-		setAttributes({
-			mediaURL: media.url,
-			mediaID: media.id,
-		});
-	};
-	const onRemovemedia = () => {
-		setAttributes({
-			mediaID: undefined,
-		});
-	};
-	return (
-		<>
-		<InspectorControls>
+  const { Heading, mediaID, mediaURL, buttonText, buttonURL } = attributes;
+  const onChangeHeading = (newHeading) => {
+    setAttributes({ Heading: newHeading });
+  };
+  const onSelectImage = (media) => {
+    setAttributes({
+      mediaURL: media.url,
+      mediaID: media.id,
+    });
+  };
+  const onRemovemedia = () => {
+    setAttributes({
+      mediaID: undefined,
+    });
+  };
+  return (
+    <>
+      <InspectorControls>
         <PanelBody title={__("Settings", "walletup")}>
           <TextControl
             label={__("Button URL")}
@@ -63,62 +63,62 @@ export default function Edit({ attributes, setAttributes }) {
           />
         </PanelBody>
       </InspectorControls>
-			<section id="zig-zag" {...useBlockProps()}>
-				<div className="zig-zag">
-					<div className="container p-0">
-						<div className="zig-zag__inner">
-							<div className="row">
-								<div className="col-lg-6">
-									<div className="zig-zag__inner_heading">
-										<RichText
-											tagName="h2"
-											value={Heading}
-											onChange={onChangeHeading}
-											placeholder={__("Enter zig-zag text...", "walletup")}
-										/>
-									</div>
-									<div className="zig-zag__inner_button">
-										<RichText
-											tagName="a"
-											className="button-text"
-											placeholder={__("Button Text")}
-											value={buttonText}
-											onChange={(newText) =>
-												setAttributes({ buttonText: newText })
-											}
-										/>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="zig-zag__inner_img">
-										<MediaUploadCheck>
-											<MediaUpload
-												onSelect={onSelectImage}
-												allowedTypes="image"
-												value={mediaID}
-												render={({ open }) => (
-													<button onClick={open}>
-														{!mediaID ? (
-															__("Upload Image")
-														) : (
-															<img src={mediaURL} />
-														)}
-													</button>
-												)}
-											/>
-										</MediaUploadCheck>
-										<MediaUploadCheck>
-											<Button onClick={onRemovemedia} isLink isDestructive>
-												{__("remove image", "post-media-selector")}
-											</Button>
-										</MediaUploadCheck>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</>
-	);
+      <section id="zig-zag" {...useBlockProps()}>
+        <div className="zig-zag">
+          <div className="container p-0">
+            <div className="zig-zag__inner">
+              <div className="row">
+                <div className="col-lg-7 col-md-7 col-12">
+                  <div className="zig-zag__inner_heading">
+                    <RichText
+                      tagName="h2"
+                      value={Heading}
+                      onChange={onChangeHeading}
+                      placeholder={__("Enter zig-zag text...", "walletup")}
+                    />
+                  </div>
+                  <div className="zig-zag__inner_button">
+                    <RichText
+                      tagName="a"
+                      className="button-text"
+                      placeholder={__("Button Text")}
+                      value={buttonText}
+                      onChange={(newText) =>
+                        setAttributes({ buttonText: newText })
+                      }
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-5 col-md-5 col-12">
+                  <div className="zig-zag__inner_img">
+                    <MediaUploadCheck>
+                      <MediaUpload
+                        onSelect={onSelectImage}
+                        allowedTypes="image"
+                        value={mediaID}
+                        render={({ open }) => (
+                          <button onClick={open}>
+                            {!mediaID ? (
+                              __("Upload Image")
+                            ) : (
+                              <img src={mediaURL} />
+                            )}
+                          </button>
+                        )}
+                      />
+                    </MediaUploadCheck>
+                    <MediaUploadCheck>
+                      <Button onClick={onRemovemedia} isLink isDestructive>
+                        {__("remove image", "post-media-selector")}
+                      </Button>
+                    </MediaUploadCheck>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

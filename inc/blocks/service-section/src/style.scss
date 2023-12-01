@@ -51,6 +51,9 @@
                 font-weight: 800;
                 margin: 0;
                 letter-spacing: -4px;
+                span {
+                    color: #ffffff;
+                }
                 @include max-1199 {
                     font-size: 65px;
                     line-height: 70px;
@@ -62,8 +65,13 @@
                 @include max-767 {
                     font-size: 38px;
                     line-height: 44px;
-                    text-align: center;
                     letter-spacing: -1px;
+                    text-align: center;
+                }
+                @include max-575 {
+                    font-size: 35px;
+                    line-height: 40px;
+                    
                 }
                 br {
                     @include max-991 {
@@ -91,6 +99,13 @@
                 padding: 10px 40px;
                 border-radius: 30px;
                 letter-spacing: -1px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                &:hover {
+                background-color: #000;
+                color: #fff;
+                border: 2px solid #000;
+                }
                 @include max-1199 {
                     font-size: 18px;
                     line-height: 24px;

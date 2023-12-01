@@ -2,9 +2,9 @@
     "version": 1,
     "settings": {
         "layout": {
-			"contentSize": "100%",
-			"wideSize": "1140px"
-		},
+            "contentSize": "100%",
+            "wideSize": "1140px"
+        },
         "color": {
             "palette": [
                 {

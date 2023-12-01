@@ -22,23 +22,27 @@
 }
 .zig-zag__inner {
   padding: 87px 0;
+  margin-top: 85px;
 }
 @media screen and (max-width: 991px) {
   .zig-zag__inner {
-    padding: 75px 0;
+    padding: 70px 0;
+    margin-top: 65px;
   }
 }
 @media screen and (max-width: 767px) {
   .zig-zag__inner {
-    padding: 65px 0;
+    padding: 50px 0;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 575px) {
   .zig-zag__inner {
-    padding: 50px 0;
+    padding: 40px 0;
+    margin-top: 40px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .zig-zag__inner_heading {
     text-align: center;
   }
@@ -59,14 +63,23 @@
 }
 @media screen and (max-width: 991px) {
   .zig-zag__inner_heading h2 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 @media screen and (max-width: 767px) {
   .zig-zag__inner_heading h2 {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .zig-zag__inner_heading h2 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .zig-zag__inner_heading h2 {
+    font-size: 31px;
+    line-height: 35px;
   }
 }
 .zig-zag__inner_button {
@@ -75,24 +88,35 @@
 @media screen and (max-width: 575px) {
   .zig-zag__inner_button {
     text-align: center;
-    padding: 20px 0 30px 0 !important;
+    padding: 20px 0 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .zig-zag__inner_button {
+    text-align: center;
   }
 }
 @media screen and (max-width: 991px) {
   .zig-zag__inner_button {
-    padding: 50px 0;
+    padding: 25px 0 40px 0;
   }
 }
 .zig-zag__inner_button a {
   font-size: 17px;
   line-height: 23px;
   text-decoration: none;
-  color: #ffffff !important;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   padding: 10px 30px;
   border-radius: 30px;
   background-color: #1747e7;
+  cursor: pointer;
+}
+.zig-zag__inner_button a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 500ms;
 }
 @media screen and (max-width: 1199px) {
   .zig-zag__inner_button a {
@@ -127,7 +151,17 @@
     width: 300px;
   }
 }
+@media screen and (max-width: 767px) {
+  .zig-zag__inner_img img {
+    width: 350px !important;
+  }
+}
 @media screen and (max-width: 991px) {
+  .zig-zag__inner_img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
   .zig-zag__inner_img {
     text-align: center;
   }

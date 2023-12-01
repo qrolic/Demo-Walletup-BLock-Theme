@@ -10,33 +10,38 @@
 /**
  * Frontend side script and style enqueue.
  */
-function walletup_frontend_theme_scripts() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/main.css', array(), 'all' );
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/library/bootstrap-grid.min.css', array(), 'all' );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), 1.1, true );
+function walletup_frontend_theme_scripts()
+{
+	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css', array(), 'all');
+	wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/library/bootstrap-grid.min.css', array(), 'all');
+	wp_enqueue_style('splide-slider-css', get_template_directory_uri() . '/assets/css/library/splide.min.css', array(), 'all');
+	wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), 1.1, true);
+	wp_enqueue_script('splide-slide-js', get_template_directory_uri() . '/assets/js/splide.min.js', array('jquery'), 1.1, true);
 }
-add_action( 'wp_enqueue_scripts', 'walletup_frontend_theme_scripts' );
+add_action('wp_enqueue_scripts', 'walletup_frontend_theme_scripts');
 
 /**
  * Backend side css files
  * This function use for add site multiple backend enqueue file
  */
-function prefix_editor_style_setup() {
+function prefix_editor_style_setup()
+{
 	// Enqueue styles for the block editor
-	wp_enqueue_style( 'admin-style', get_template_directory_uri() . '/assets/css/admin/admin.css', array(), '1.0' );
+	wp_enqueue_style('admin-style', get_template_directory_uri() . '/assets/css/admin/admin.css', array(), '1.0');
 	// Enqueue script for the block editor
-	wp_enqueue_script( 'admin-script', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), '1.1', true );
+	wp_enqueue_script('admin-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.1', true);
 }
 
-add_action( 'enqueue_block_editor_assets', 'prefix_editor_style_setup' );
+add_action('enqueue_block_editor_assets', 'prefix_editor_style_setup');
 
 /**
  * Backend side css files
  * This function use for add site multiple backend enqueue file
  */
-function prefix_backend_editor_style() {
-	add_theme_support( 'editor-style' );
-	add_editor_style( 'assets/css/admin/admin.css' );
-	add_editor_style( 'assets/css/library/bootstrap-grid.min.css' );
+function prefix_backend_editor_style()
+{
+	add_theme_support('editor-style');
+	add_editor_style('assets/css/admin/admin.css');
+	add_editor_style('assets/css/library/bootstrap-grid.min.css');
 }
-add_action( 'after_setup_theme', 'prefix_backend_editor_style' );
+add_action('after_setup_theme', 'prefix_backend_editor_style');

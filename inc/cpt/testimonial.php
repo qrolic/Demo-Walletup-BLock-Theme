@@ -1,5 +1,11 @@
 <?php
-function custom_post_type()
+/**
+ * This file is display admine site show Custom Post Type.
+ * description : Testimonials block contains reviews given by clients in slider
+ *  walletup block theme
+ */
+
+function testimonial_custom_post_type()
 {
 
 	// Set UI labels for Custom Post Type
@@ -42,6 +48,7 @@ function custom_post_type()
 		'menu_position' => 5,
 		'can_export' => true,
 		'has_archive' => true,
+		'rewrite' => array('slug' => 'testimonials'),
 		'exclude_from_search' => false,
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
@@ -54,5 +61,5 @@ function custom_post_type()
 
 }
 
-add_action('init', 'custom_post_type', 0); 
+add_action('init', 'testimonial_custom_post_type', 0); 
 ?>

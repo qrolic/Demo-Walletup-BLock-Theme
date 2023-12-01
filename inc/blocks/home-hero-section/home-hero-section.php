@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Home Hero Section
- * Description:       This block shows the banner section on the homepage and this block shows a title a description and a button.
+ * Description:       This block shows the banner section in text on the homepage
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0

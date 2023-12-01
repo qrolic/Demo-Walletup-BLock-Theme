@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+/**
+ * This file is all scss file enqueue.
+ *  walletup block theme
+ */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @font-face {
@@ -15,71 +16,217 @@
   font-family: "poppins";
   src: "../../../../fonts/Poppins-Bold.ttf";
 }
-@font-face {
-  font-family: "MYRIADPRO-REGULAR";
-  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+/**
+ * This file is display show all global css.
+ *  walletup block theme
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
 }
-@font-face {
-  font-family: "MYRIADPRO-BOLD";
-  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-@font-face {
-  font-family: "poppins";
-  src: "../../../../fonts/Poppins-Bold.ttf";
+
+html.has-modal-open {
+  overflow: visible;
+}
+
+.footer {
+  padding: 150px 0 125px;
+  background-color: black;
+  position: relative;
+}
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding: 125px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 75px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+.footer_inner {
+  margin: 0;
+}
+.footer_inner h2 {
+  font-size: 35px;
+  line-height: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+.footer_inner ul li {
+  margin: 5px 0;
+}
+.footer_inner ul li a {
+  -webkit-text-decoration: underline #f0f0f0;
+          text-decoration: underline #f0f0f0;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.footer_inner ul li a:hover {
+  text-decoration: none;
+}
+.footer::after {
+  content: url("./../img/footer-bottom.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+@media screen and (max-width: 991px) {
+  .footer::after {
+    display: none;
+  }
+}
+
+.wp-block-columns .wp-block-column {
+  flex-basis: unset !important;
+  flex-grow: unset !important;
+}
+
+.navigation {
+  margin-top: 65px;
+}
+@media screen and (max-width: 991px) {
+  .navigation {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navigation {
+    margin-top: 25px;
+  }
+}
+.navigation-top-menu {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .navigation-top-menu {
+    flex-direction: row-reverse;
+  }
 }
 .navigation-menu {
-  display: flex;
-  justify-content: space-evenly;
   list-style: none;
-  margin-top: 85px;
 }
-.navigation-menu li a {
+.navigation-menu li a span {
   text-decoration: none;
   color: #000;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   padding: 15px;
+  margin: 0 20px;
 }
-.navigation-menu li a:hover {
+@media screen and (max-width: 1199px) {
+  .navigation-menu li a span {
+    padding: 5px;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navigation-menu li a span {
+    padding: 8px;
+    margin: 0 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation-menu li a span {
+    font-size: 17px;
+  }
+}
+.navigation-menu li a span:hover {
   border-bottom: 8px solid #1747e7;
 }
-
-.is-layout-flex {
-  margin: 0 0 0px 0 !important;
+@media screen and (max-width: 600px) {
+  .navigation-button .button {
+    display: none;
+  }
+}
+.navigation-button .button a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border: 2px solid transparent;
+  padding: 10px 50px;
+}
+@media screen and (max-width: 767px) {
+  .navigation-button .button a {
+    padding: 10px 30px;
+  }
+}
+.navigation-button .button a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  transition: all 500ms;
+}
+@media screen and (max-width: 600px) {
+  .navigation .navigation-top-menu {
+    width: 100%;
+  }
 }
 
-.has-custom-content-position {
-  padding-bottom: 0 !important;
+.navigation .has-modal-open {
+  max-width: 300px;
+  animation: none !important;
+  transition: all 500ms;
+  padding: 0 15px 0 25px;
+}
+@media screen and (max-width: 575px) {
+  .navigation .has-modal-open {
+    max-width: 250px;
+    box-shadow: 5px 5px 15px -2px;
+  }
 }
 
-.size-full {
-  margin: 0 !important;
-}
-
-.is-layout-constrained {
-  padding: 0 !important;
-}
-
-.wp-block-image {
-  position: relative;
-  right: -68px;
-}
-
-@font-face {
-  font-family: "MYRIADPRO-REGULAR";
-  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
-}
-@font-face {
-  font-family: "MYRIADPRO-BOLD";
-  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
-}
-@font-face {
-  font-family: "poppins";
-  src: "../../../../fonts/Poppins-Bold.ttf";
-}
+/**
+ *  This file contains all the CSS of the secret section.
+ *  walletup block theme
+ */
 .secret {
   margin-top: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .secret {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret {
+    margin: 50px 0 50px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret {
+    margin: 0 0 50px 0;
+  }
 }
 .secret__inner {
   position: relative;
@@ -98,18 +245,23 @@
   line-height: 75px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin-bottom: 62px !important;
+  margin-bottom: 62px;
 }
 @media screen and (max-width: 1199px) {
   .secret__inner .row h2 {
     font-size: 70px;
     line-height: 76px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 991px) {
   .secret__inner .row h2 {
     font-size: 60px;
     line-height: 66px;
+    margin: 0 0 40px 0;
+  }
+  .secret__inner .row h2 br {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -117,22 +269,66 @@
     font-size: 45px;
     line-height: 50px;
   }
+  .secret__inner .row h2 br {
+    display: none;
+  }
 }
 @media screen and (max-width: 575px) {
   .secret__inner .row h2 {
     font-size: 35px;
     line-height: 40px;
+    text-align: center;
+  }
+}
+.secret__inner .row h2 strong {
+  color: #00c6ad;
+  font-size: 81.61px;
+  line-height: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 1199px) {
+  .secret__inner .row h2 strong {
+    font-size: 70px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secret__inner .row h2 strong {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  .secret__inner .row h2 strong br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secret__inner .row h2 strong {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .secret__inner .row h2 strong {
+    font-size: 40px;
+    line-height: 45px;
   }
 }
 .secret__inner .row .secret-img {
-  right: -100px;
+  margin: 0;
+  position: relative;
+  right: -120px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .secret__inner .row .secret-img {
     display: none;
   }
 }
 
+/**
+ * This file contains all the CSS of the contact form.
+ *  walletup block theme
+ */
 @font-face {
   font-family: "MYRIADPRO-REGULAR";
   src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
@@ -149,73 +345,231 @@
   margin: 100px 0;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .contact-form {
+    margin: 75px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-form {
+    margin: 50px 0;
+  }
+}
 .contact-form_First_heading {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+@media screen and (max-width: 575px) {
+  .contact-form_First_heading {
+    display: block;
+  }
+}
 .contact-form_First_heading__First-name {
   width: 47%;
 }
+@media screen and (max-width: 575px) {
+  .contact-form_First_heading__First-name {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
 .contact-form_First_heading__First-name p input {
+  font-size: 16px;
+  color: #b1b1b1;
+  font-family: "Open sans", "sans serif";
+  font-weight: 600;
   width: 87%;
   padding: 20px 0 20px 50px;
   border: 2px solid #b1b1b1;
-  border-radius: 7px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+@media screen and (max-width: 991px) {
+  .contact-form_First_heading__First-name p input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form_First_heading__First-name p input {
+    width: 87%;
+    padding: 10px 0 10px 20px;
+  }
 }
 .contact-form_First_heading_Last-name {
   width: 47%;
 }
+@media screen and (max-width: 575px) {
+  .contact-form_First_heading_Last-name {
+    width: 100%;
+  }
+}
 .contact-form_First_heading_Last-name p input {
+  font-size: 16px;
+  color: #b1b1b1;
+  font-family: "Open sans", "sans serif";
+  font-weight: 600;
   width: 87%;
   padding: 20px 0 20px 50px;
   border: 2px solid #b1b1b1;
-  border-radius: 7px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 991px) {
+  .contact-form_First_heading_Last-name p input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form_First_heading_Last-name p input {
+    width: 87%;
+    padding: 10px 0 10px 20px;
+  }
 }
 .contact-form__Email-Subject p input {
   width: 88%;
   padding: 20px 0 20px 50px;
   border: 2px solid #b1b1b1;
-  border-radius: 7px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #b1b1b1;
+  font-family: "Open sans", "sans serif";
+  font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .contact-form__Email-Subject p input {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form__Email-Subject p input {
+    width: 88%;
+    padding: 10px 0 10px 20px;
+  }
 }
 .contact-form__Your-message p span textarea {
-  width: 92%;
+  width: 88%;
   border: 2px solid #b1b1b1;
-  border-radius: 7px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  padding: 20px 0 20px 50px;
+  color: #b1b1b1;
+  font-size: 16px;
+  font-family: "Open sans", "sans serif";
+  font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .contact-form__Your-message p span textarea {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form__Your-message p span textarea {
+    width: 88%;
+    padding: 15px 0 15px 15px;
+  }
 }
 .contact-form__Submit-Email p button {
+  font-size: 17px;
   padding: 15px 150px;
   color: #fff;
   background-color: #2746e6;
+  font-family: "Open sans", "Sans Serif";
+  font-weight: 800;
   border-radius: 7px;
-  border: none;
+  border: 2px solid transparent;
   margin-top: 80px;
+  cursor: pointer;
+}
+.contact-form__Submit-Email p button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid black;
+}
+@media screen and (max-width: 1199px) {
+  .contact-form__Submit-Email p button {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-form__Submit-Email p button {
+    margin-top: 35px;
+    padding: 12px 125px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form__Submit-Email p button {
+    margin-top: 25px;
+    padding: 10px 100px;
+    font-size: 15px;
+  }
 }
 .contact-form__inner .row h2 {
   font-size: 50px;
   line-height: 55px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin-bottom: 55px !important;
+  margin-bottom: 55px;
   text-align: center;
 }
+@media screen and (max-width: 991px) {
+  .contact-form__inner .row h2 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form__inner .row h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact-form__inner .row h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 
-@font-face {
-  font-family: "MYRIADPRO-REGULAR";
-  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+.wpcf7-form .wpcf7-response-output {
+  font-size: 17px;
+  line-height: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 15px 0 !important;
 }
-@font-face {
-  font-family: "MYRIADPRO-BOLD";
-  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
-}
-@font-face {
-  font-family: "poppins";
-  src: "../../../../fonts/Poppins-Bold.ttf";
-}
+
+/**
+ *  This file contains all the CSS of the step-service.
+ *  walletup block theme
+ */
 .step-service {
   margin-top: 100px;
-  padding: 130px 0 !important;
+  padding: 130px 0;
   position: relative;
+}
+@media screen and (max-width: 1199px) {
+  .step-service {
+    margin-top: 75px;
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step-service {
+    margin-top: 50px;
+    padding: 50px 65px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service {
+    margin-top: 0px;
+    padding: 50px 30px;
+  }
 }
 .step-service__inner {
   position: relative;
@@ -234,32 +588,33 @@
   line-height: 80px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  margin: 0 !important;
-  padding: 20px 0 !important;
+  margin: 0;
+  padding: 20px 0;
   border-bottom: 7px solid #fff;
 }
 @media screen and (max-width: 1199px) {
-  .step-service__inner .row h2 {
-    font-size: 65px;
-    line-height: 70px;
-  }
-}
-@media screen and (max-width: 991px) {
   .step-service__inner .row h2 {
     font-size: 55px;
     line-height: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .step-service__inner .row h2 {
     font-size: 45px;
     line-height: 50px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .step-service__inner .row h2 {
     font-size: 35px;
     line-height: 40px;
+    padding: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row h2 {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 .step-service__inner .row p {
@@ -267,14 +622,46 @@
   line-height: 23px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  padding: 35px 0 !important;
+  padding: 35px 0;
+  text-align: justify;
+}
+@media screen and (max-width: 575px) {
+  .step-service__inner .row p {
+    padding: 20px 0;
+  }
 }
 .step-service__inner .step-pending {
-  padding: 0 50px !important;
+  padding: 0 50px;
+}
+@media screen and (max-width: 991px) {
+  .step-service__inner .step-pending {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-service__inner .step-pending {
+    padding: 0;
+  }
 }
 .step-service::before {
-  content: url("./../../img/step-section-top.png");
+  content: url("./../img/step-section-top.png");
   position: absolute;
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 991px) {
+  .step-service::before {
+    display: none;
+  }
+}
+.step-service::after {
+  content: url("./../img/step-section-bottom.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 991px) {
+  .step-service::after {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

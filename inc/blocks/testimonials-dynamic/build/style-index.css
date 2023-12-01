@@ -1,0 +1,231 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-REGULAR.woff";
+}
+@font-face {
+  font-family: "MYRIADPRO-BOLD";
+  src: "../../../../fonts/myriad-pro/MYRIADPRO-BOLD.woff";
+}
+@font-face {
+  font-family: "poppins";
+  src: "../../../../fonts/Poppins-Bold.ttf";
+}
+.testimonial {
+  position: relative;
+}
+.testimonial__inner {
+  margin: 295px 0;
+}
+@media screen and (max-width: 991px) {
+  .testimonial__inner {
+    margin: 75px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonial__inner {
+    margin: 50px 0;
+  }
+}
+.testimonial__inner h2 {
+  font-size: 76.42px;
+  line-height: 70px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+.testimonial__inner h2 span {
+  color: #00c6ad;
+}
+@media screen and (max-width: 1199px) {
+  .testimonial__inner h2 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .testimonial__inner h2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0 0 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonial__inner h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .testimonial__inner h2 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .testimonial__inner h2 {
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .testimonial__inner h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+.testimonial__inner i p {
+  font-size: 27px;
+  line-height: 33px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 25px 0 35px 0;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .testimonial__inner i p {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 15px 0 25px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .testimonial__inner i p {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+.testimonial__inner p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 285px;
+  text-align: justify;
+}
+@media screen and (max-width: 1199px) {
+  .testimonial__inner p {
+    padding: 0 150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .testimonial__inner p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonial__inner p {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .testimonial__inner p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.testimonial::before {
+  content: url(images/testimonials-top.36d8d94a.png);
+  position: absolute;
+  top: -4.3%;
+  right: 0;
+  z-index: -99;
+}
+@media screen and (max-width: 991px) {
+  .testimonial::before {
+    display: none;
+  }
+}
+.testimonial::after {
+  content: url(images/testimonials-bottom.04728ef3.png);
+  position: absolute;
+  bottom: 48%;
+  left: 0;
+  width: auto;
+}
+@media screen and (max-width: 991px) {
+  .testimonial::after {
+    display: none;
+  }
+}
+
+.splide__arrow--next {
+  position: relative;
+  right: 8em !important;
+}
+.splide__arrow--next svg {
+  display: none !important;
+}
+.splide__arrow--next::after {
+  content: url(images/slider-arrow-prev.91b61536.png);
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 991px) {
+  .splide__arrow--next {
+    right: 1em !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .splide__arrow--next {
+    right: -2.5em !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .splide__arrow--next {
+    right: 1em !important;
+  }
+}
+
+.splide__arrow--prev {
+  left: 8em !important;
+}
+.splide__arrow--prev svg {
+  display: none;
+}
+.splide__arrow--prev::before {
+  content: url(images/slider-Arrow.0ba6ec6a.png);
+  position: absolute;
+  left: 0;
+}
+@media screen and (max-width: 991px) {
+  .splide__arrow--prev {
+    left: 1em !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .splide__arrow--prev {
+    left: -2.5em !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .splide__arrow--prev {
+    left: 1em !important;
+  }
+}
+
+.splide__arrow {
+  background: none !important;
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
