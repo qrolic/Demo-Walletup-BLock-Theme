@@ -89,7 +89,7 @@ function Edit({
     id: "banner-description",
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner-description"
+    className: "banner-descriptions"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -121,14 +121,14 @@ function Edit({
     tagName: "h4",
     value: Heading,
     onChange: onChangeHeading,
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enter banner text...", "walletup")
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enter heading...", "walletup")
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner_description"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "p",
     value: description,
     onChange: onChangeDescription,
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enter banner description...", "walletup")
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enter description...", "walletup")
   }))))))));
 }
 
@@ -230,7 +230,7 @@ function save(props) {
     id: "banner-description",
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save()
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner-description"
+    className: "banner-descriptions"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-description__inner"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {

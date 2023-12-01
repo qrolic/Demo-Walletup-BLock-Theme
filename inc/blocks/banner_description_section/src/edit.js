@@ -58,7 +58,7 @@ export default function Edit({ attributes, setAttributes }) {
   return (
     <>
       <section id="banner-description" {...useBlockProps()}>
-        <div className="banner-description">
+        <div className="banner-descriptions">
           <div className="banner-description__inner">
             <div className="row banner">
               <div className="col-lg-4 col-md-4 col-3 p-0">
@@ -92,7 +92,7 @@ export default function Edit({ attributes, setAttributes }) {
                     tagName="h4"
                     value={Heading}
                     onChange={onChangeHeading}
-                    placeholder={__("Enter banner text...", "walletup")}
+                    placeholder={__("Enter heading...", "walletup")}
                   />
                 </div>
                 <div className="banner-description__inner_description">
@@ -100,7 +100,7 @@ export default function Edit({ attributes, setAttributes }) {
                     tagName="p"
                     value={description}
                     onChange={onChangeDescription}
-                    placeholder={__("Enter banner description...", "walletup")}
+                    placeholder={__("Enter description...", "walletup")}
                   />
                 </div>
               </div>

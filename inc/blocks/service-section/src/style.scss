@@ -66,11 +66,12 @@
                     font-size: 38px;
                     line-height: 44px;
                     letter-spacing: -1px;
+                    text-align: center;
                 }
                 @include max-575 {
                     font-size: 35px;
                     line-height: 40px;
-                    text-align: center;
+                    
                 }
                 br {
                     @include max-991 {

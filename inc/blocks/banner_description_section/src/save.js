@@ -19,7 +19,7 @@ export default function save(props) {
 	const { Heading, description, mediaURL } = props.attributes;
 	return (
 		<section id="banner-description" {...useBlockProps.save()}>
-			<div className="banner-description">
+			<div className="banner-descriptions">
 			
 					<div className="banner-description__inner">
 						<div className="row banner">

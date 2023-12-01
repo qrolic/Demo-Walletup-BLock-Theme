@@ -208,7 +208,13 @@ export default function Edit({ attributes, setAttributes }) {
                   {displayThumbnail &&
                     post._embedded &&
                     post._embedded["wp:featuredmedia"] &&
-                    post._embedded["wp:featuredmedia"][0] && (
+                    post._embedded["wp:featuredmedia"][0] &&
+                    post._embedded["wp:featuredmedia"][0].media_details &&
+                    post._embedded["wp:featuredmedia"][0].media_details.sizes &&
+                    post._embedded["wp:featuredmedia"][0].media_details.sizes
+                      .large &&
+                    post._embedded["wp:featuredmedia"][0].media_details.sizes
+                      .large.source_url && (
                       <img
                         className="wp-block-author-box-author-plugin__post-thumbnail"
                         src={

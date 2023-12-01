@@ -183,7 +183,7 @@ function Edit({
   }, posts && posts.map(post => {
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
       key: post.id
-    }, displayThumbnail && post._embedded && post._embedded["wp:featuredmedia"] && post._embedded["wp:featuredmedia"][0] && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    }, displayThumbnail && post._embedded && post._embedded["wp:featuredmedia"] && post._embedded["wp:featuredmedia"][0] && post._embedded["wp:featuredmedia"][0].media_details && post._embedded["wp:featuredmedia"][0].media_details.sizes && post._embedded["wp:featuredmedia"][0].media_details.sizes.large && post._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       className: "wp-block-author-box-author-plugin__post-thumbnail",
       src: post._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url,
       alt: post._embedded["wp:featuredmedia"][0].alt_text

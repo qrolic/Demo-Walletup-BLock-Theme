@@ -42,10 +42,13 @@
                         padding: 8px;
                         margin: 0 0px;
                     }
+                    @include max-767 {
+                        font-size: 17px;
+                    }
 
                     &:hover {
                         border-bottom: 8px solid #1747e7;
-                        font-weight: 600;
+                       
                     }
                 }
             }
@@ -80,14 +83,9 @@
     }
 
 
-    .has-modal-open {
-        max-width: 300px;
-        animation: none !important;
-        transition: all 500ms;
-        padding: 0 15px 0 25px;
-        @include max-575 {
-            max-width: 250px;
-            box-shadow: 5px 5px 15px -2px ;
-        }
+.navigation-top-menu {
+    @include max-600 {
+        width: 100%;
     }
+}
 }

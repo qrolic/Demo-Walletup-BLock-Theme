@@ -26,19 +26,14 @@
 .home-hero {
   padding: 150px 0px;
 }
-@media screen and (max-width: 1199px) {
-  .home-hero {
-    padding: 85px 0;
-  }
-}
 @media screen and (max-width: 991px) {
   .home-hero {
-    padding: 65px 0;
+    padding: 100px 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .home-hero {
-    padding: 50px 0;
+    padding: 75px 0;
   }
 }
 .home-hero .home-hero__inner_heading h1 {

@@ -97,6 +97,7 @@
 @media screen and (max-width: 767px) {
   .wp-block-author-box-author-plugin__post-items li {
     width: 100%;
+    padding: 0 20px !important;
   }
 }
 .wp-block-author-box-author-plugin__post-items li h4 {

@@ -157,9 +157,13 @@ html.has-modal-open {
     margin: 0 0px;
   }
 }
+@media screen and (max-width: 767px) {
+  .navigation-menu li a span {
+    font-size: 17px;
+  }
+}
 .navigation-menu li a span:hover {
   border-bottom: 8px solid #1747e7;
-  font-weight: 600;
 }
 @media screen and (max-width: 600px) {
   .navigation-button .button {
@@ -183,6 +187,12 @@ html.has-modal-open {
   border: 2px solid #000;
   transition: all 500ms;
 }
+@media screen and (max-width: 600px) {
+  .navigation .navigation-top-menu {
+    width: 100%;
+  }
+}
+
 .navigation .has-modal-open {
   max-width: 300px;
   animation: none !important;
@@ -197,7 +207,7 @@ html.has-modal-open {
 }
 
 /**
- * This file is display show heading, text and img in secret section.
+ *  This file contains all the CSS of the secret section.
  *  walletup block theme
  */
 .secret {
@@ -298,6 +308,12 @@ html.has-modal-open {
     line-height: 50px;
   }
 }
+@media screen and (max-width: 425px) {
+  .secret__inner .row h2 strong {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
 .secret__inner .row .secret-img {
   margin: 0;
   position: relative;
@@ -310,7 +326,7 @@ html.has-modal-open {
 }
 
 /**
- * This file is display show contact form.
+ * This file contains all the CSS of the contact form.
  *  walletup block theme
  */
 @font-face {
@@ -344,8 +360,19 @@ html.has-modal-open {
   justify-content: center;
   width: 100%;
 }
+@media screen and (max-width: 575px) {
+  .contact-form_First_heading {
+    display: block;
+  }
+}
 .contact-form_First_heading__First-name {
   width: 47%;
+}
+@media screen and (max-width: 575px) {
+  .contact-form_First_heading__First-name {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 .contact-form_First_heading__First-name p input {
   font-size: 16px;
@@ -371,6 +398,11 @@ html.has-modal-open {
 }
 .contact-form_First_heading_Last-name {
   width: 47%;
+}
+@media screen and (max-width: 575px) {
+  .contact-form_First_heading_Last-name {
+    width: 100%;
+  }
 }
 .contact-form_First_heading_Last-name p input {
   font-size: 16px;
@@ -513,7 +545,7 @@ html.has-modal-open {
 }
 
 /**
- * This file is display show heading, text and img in step-service section.
+ *  This file contains all the CSS of the step-service.
  *  walletup block theme
  */
 .step-service {
@@ -536,7 +568,7 @@ html.has-modal-open {
 @media screen and (max-width: 767px) {
   .step-service {
     margin-top: 0px;
-    padding: 50px;
+    padding: 50px 30px;
   }
 }
 .step-service__inner {
@@ -562,8 +594,8 @@ html.has-modal-open {
 }
 @media screen and (max-width: 1199px) {
   .step-service__inner .row h2 {
-    font-size: 65px;
-    line-height: 70px;
+    font-size: 55px;
+    line-height: 60px;
   }
 }
 @media screen and (max-width: 991px) {
